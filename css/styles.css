@@ -170,15 +170,13 @@ a:active {
 
 .page-header__container {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  flex-wrap: wrap;
-  
-  /* Allows for responsive resizing on smaller screens */
-
-  /* flex-direction: column;
   align-items: center;
-  justify-content: center;
-  text-align: center; */
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .page-header {
@@ -454,25 +452,11 @@ tbody tr:nth-child(even) {
   .project-list {
     grid-template-columns: 1fr;
   }
-  .page-header__container {
-    /* Allows for responsive resizing on smaller screens */
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
   .project-list {
     grid-template-columns: 1fr 1fr;
-  }
-  .page-header__container {
-    /* Allows for responsive resizing on smaller screens */
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
   }
 }
 
