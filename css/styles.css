@@ -16,8 +16,8 @@ Background Color (Ivory Black): #1D2731;
   --background-color: #1d2731;
   --text-color: #eee;
   --secondary-text-color: #d9b310;
-  --header-font-size: 2.5rem;
-  --medium-font-size: 1.6rem;
+  --header-font-size: 24px;
+  --medium-font-size: 16px;
 }
 
 * {
@@ -324,7 +324,6 @@ tbody tr:nth-child(even) {
 }
 
 .contact-container {
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -467,8 +466,5 @@ tbody tr:nth-child(even) {
   .project-list__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
-  }
-  h1 {
-    font-size: 22px;
   }
 }
