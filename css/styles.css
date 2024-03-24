@@ -233,6 +233,8 @@ a:active {
   border: 5px solid #1d2731;
   border-radius: 8px;
   padding: 0 6px 0 6px;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .logo {
