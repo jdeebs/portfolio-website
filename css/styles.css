@@ -18,6 +18,10 @@ Background Color (Ivory Black): #1D2731;
   --secondary-text-color: #d9b310;
   --header-font-size: 24px;
   --medium-font-size: 16px;
+  --space-unit: 1em;
+  --space-sm: calc(0.75 * var(--space-unit));
+  --space-md: calc(1.25 * var(--space-unit));
+  --space-lg: calc(2 * var(--space-unit));
 }
 
 * {
@@ -32,27 +36,17 @@ body {
   font-family: "Tajawal", sans-serif;
   font-size: var(--medium-font-size);
   font-weight: 400;
-  line-height: 1.6;
+  line-height: 2em;
   color: var(--text-color);
 }
 
 header {
   font-size: var(--header-font-size);
-  line-height: 1.4;
 }
 
-h1 {
-  margin: 20px 0 20px 0;
-}
-
-h2 {
-  margin: 0;
-}
-
-h3 {
-  margin: 0;
-}
-
+h1,
+h2,
+h3,
 ul {
   margin: 0;
   padding: 0;
@@ -78,6 +72,12 @@ a:focus {
 a:active {
   font-size: var(--header-font-size);
   text-decoration: none;
+}
+
+.page__title {
+  padding-top: var(--space-md);
+  padding-bottom: var(--space-md);
+  text-align: center;
 }
 
 .contact-button,
@@ -441,12 +441,6 @@ tbody tr:nth-child(even) {
 
 .cloud-left {
   animation: 37s cloud-left-move infinite alternate linear;
-}
-
-.about__title,
-.contact__title,
-.work__title {
-  text-align: center;
 }
 
 @media all and (max-width: 500px) {
