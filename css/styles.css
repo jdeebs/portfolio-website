@@ -16,8 +16,9 @@ Background Color (Ivory Black): #1D2731;
   --background-color: #1d2731;
   --text-color: #eee;
   --secondary-text-color: #d9b310;
-  --header-font-size: 24px;
-  --medium-font-size: 16px;
+  --header-font-size: 2.4em;
+  --medium-font-size: 1.6em;
+  --small-font-size: 0.6em;
   --space-unit: 1em;
   --space-sm: calc(0.75 * var(--space-unit));
   --space-md: calc(1.25 * var(--space-unit));
@@ -54,7 +55,7 @@ ul {
 
 a {
   color: var(--secondary-text-color);
-  font-size: 2rem;
+  font-size: var(--medium-font-size);
   transition: font-size 0.3s ease;
 }
 
@@ -64,13 +65,13 @@ a:visited {
 
 a:hover,
 a:focus {
-  font-size: var(--header-font-size);
+  font-size: calc(1.15 * var(--medium-font-size));
   text-decoration: none;
   transition: font-size 0.3s ease;
 }
 
 a:active {
-  font-size: var(--header-font-size);
+  font-size: var(--medium-font-size);
   text-decoration: none;
 }
 
@@ -85,45 +86,37 @@ a:active {
   width: 150px;
   height: 50px;
   margin: 0 auto;
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: inherit;
-  font-size: var(--medium-font-size);
+  font-size: calc(0.5 * var(--medium-font-size));
   font-weight: 800;
   background-color: var(--primary-color);
   color: var(--text-color);
   text-decoration: none;
-  padding: 10px;
-  margin-bottom: 50px;
   border: none;
   border-radius: 10px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition: opacity 0.9s;
   transition: font-size 0.3s ease;
 }
 
 .linkedIn-text,
 .linkedIn-text:hover,
-.linkedIn-text:active,
 .linkedIn-text:focus {
   color: var(--text-color);
   text-decoration: none;
+  text-align: center;
+  line-height: inherit;
 }
 
 .contact-button:hover,
 .contact-button:focus,
 .linkedIn-button:hover,
 .linkedIn-button:focus {
+  font-size: calc(0.6 * var(--medium-font-size));
+  text-decoration: none;
   cursor: pointer;
   opacity: 0.8;
-}
-
-.linkedIn-button:hover,
-.linkedIn-button:focus {
-  font-size: 17px;
-  text-decoration: none;
 }
 
 .footer_logo {
