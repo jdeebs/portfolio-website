@@ -374,7 +374,7 @@ tbody tr:nth-child(even) {
   max-width: 100%;
   height: auto;
   display: block;
-  margin-top: var(--space-md);
+  margin-top: var(--space-lg);
   margin-bottom: var(--space-lg);
 }
 
@@ -430,24 +430,14 @@ tbody tr:nth-child(even) {
   animation: 37s cloud-left-move infinite alternate linear;
 }
 
-@media all and (max-width: 500px) {
+@media all and (min-width: 320px) and (max-width: 689px) {
   .project-list {
     grid-template-columns: 1fr;
   }
 }
 
-@media all and (min-width: 500px) and (max-width: 750px) {
+@media all and (min-width: 690px) and (max-width: 1020px) {
   .project-list {
     grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media all and (max-width: 750px) {
-  .project-list {
-    grid-gap: 10px;
-  }
-  .project-list__item:last-child {
-    grid-column: auto / auto;
-    grid-row: auto / auto;
   }
 }
