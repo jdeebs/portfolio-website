@@ -128,6 +128,12 @@ a:active {
 .profile-container {
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin: 0 auto var(--space-lg) auto;
+  max-width: 700px;
+  background-color: #0073a5;
+  border: double 4px transparent;
+  border-radius: 40px;
 }
 
 .profile {
