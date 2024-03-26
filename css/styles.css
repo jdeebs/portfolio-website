@@ -430,9 +430,20 @@ tbody tr:nth-child(even) {
   animation: 37s cloud-left-move infinite alternate linear;
 }
 
+@media all and (max-width: 364px) {
+  .navigation-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 @media all and (min-width: 320px) and (max-width: 689px) {
   .project-list {
     grid-template-columns: 1fr;
+  }
+  .navigation-list a {
+    padding-left: calc(0.5 * var(--space-sm)); /* Shrink left padding */
+    padding-right: calc(0.5 * var(--space-sm)); /* Shrink right padding */
   }
 }
 
