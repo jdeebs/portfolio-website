@@ -133,7 +133,14 @@ a:active {
   max-width: 700px;
   background-color: #0073a5;
   border: double 4px transparent;
-  border-radius: 40px;
+  border-radius: 30px;
+  background: linear-gradient(
+    90deg in oklab,
+    #1d273100 3%,
+    #328cc1 45%,
+    #328cc1 55%,
+    #1d273100 97%
+  );
 }
 
 .profile {
