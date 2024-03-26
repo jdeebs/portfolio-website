@@ -225,12 +225,20 @@ a:active {
   padding: var(--space-sm);
 }
 
+.project-inactive {
+  background-color: #328dc17c;
+  text-align: center;
+  padding-top: 45px;
+}
+
 .project-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #1d2731;
   border: calc(0.25 * var(--space-sm)) solid #1d2731;
   border-radius: var(--rounded-borders);
-  padding-left: var(--space-sm);
-  padding-right: var(--space-sm);
+  margin: calc(0.25 * var(--space-sm));
   white-space: nowrap;
   overflow: hidden;
 }
