@@ -34,12 +34,12 @@ My portfolio website is a platform designed to provide visitors with an in-depth
 - Project showcase with detailed descriptions including GitHub and/or live demo links.
 
 ## Link to Live Demo
-[Live Demo](https://jdeebs.github.io/portfolio-website){:target="_blank"}
+<a href="https://jdeebs.github.io/portfolio-website" target="_blank">Live Demo</a>
 
 ## Contributing
 Contributions are welcome! Feel free to open an issue or submit a pull request with any improvements or suggestions.
 
 ## Additional Resources
-- [Google Fonts](https://fonts.google.com){:target="_blank"}
-- [Normalize.css](https://necolas.github.io/normalize.css/){:target="_blank"}
-- [Iconfinder](https://www.iconfinder.com/){:target="_blank"}
+- <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>
+- <a href="https://necolas.github.io/normalize.css/" target="_blank">Normalize.css</a>
+- <a href="https://www.iconfinder.com/" target="_blank">Iconfinder</a>
