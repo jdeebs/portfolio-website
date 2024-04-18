@@ -75,6 +75,8 @@
   }
 
   function validateForm() {
+    let isValidEmail = validateEmail();
+    let isValidPassword = validateName();
     // Check if both email and name inputs are valid
     return validateEmail() && validateName();
   }
@@ -89,5 +91,8 @@
     }
   });
 
-  // THE RETURN STATEMENT HERE
+  // Add event listeners for Email and Name inputs
+  emailInput.addEventListener("input", validateEmail);
+  nameInput.addEventListener("input", validateName);
+
 })();

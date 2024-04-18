@@ -339,6 +339,11 @@ tbody tr:nth-child(even) {
   max-width: 50vw;
 }
 
+.error-message {
+  color: red;
+  font-size: 0.8em;
+}
+
 .standard-label {
   font-size: calc(0.5 * var(--medium-font-size));
 }
