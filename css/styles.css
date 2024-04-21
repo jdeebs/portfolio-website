@@ -380,6 +380,11 @@ tbody tr:nth-child(even) {
   margin-right: var(--space-sm);
 }
 
+.name-input__container,
+.email-input__container {
+  max-width: 75vw;
+}
+
 .contact-left {
   display: flex;
   flex-direction: column;

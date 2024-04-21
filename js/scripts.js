@@ -4,7 +4,7 @@
   let emailInput = document.querySelector("#email");
 
   function showErrorMessage(input, message) {
-    let container = input.parentElement; // The .contact-container
+    let container = input.parentElement; // The input container, I.E name-input__container or email-input__container
 
     // Check and remove any existing errors
     let error = container.querySelector(".error-message");
@@ -22,11 +22,12 @@
   }
 
   function validateName() {
-    // Regular expression pattern to match only letters (uppercase and lowercase), spaces, and hyphens
-    let pattern = /^[A-Za-z\s\-]+$/;
-
     // Get the value of the name input field
     let value = nameInput.value;
+
+    // Regular expression pattern to match only letters (uppercase and lowercase), spaces, and hyphens
+    // also disallow consecutive spaces
+    let pattern = /^(?!.*[^\w\s-])(?!.*\s{2,})[A-Za-z\s\-]+$/;
 
     // Check if the name field is empty
     if (!value) {
@@ -36,9 +37,12 @@
     }
 
     // Check if the name exceeds 50 characters or contains any special characters
-    if (value.length >= 50 && pattern.test(!value)) {
+    if (value.length >= 50 || !pattern.test(value)) {
       // IF either condition is true, show an error message and return false
-      showErrorMessage(nameInput, "Name input max 50 characters, no special characters allowed");
+      showErrorMessage(
+        nameInput,
+        "Name input max 50 characters, no special characters allowed"
+      );
       return false;
     }
 
@@ -51,21 +55,18 @@
     // Get the value of the email input field
     let value = emailInput.value;
 
+    // Regular expression pattern to validate email format and check for special characters outside of "@" and "."
+    let pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
     // If the email field is empty, show an error message and return false
     if (!value) {
       showErrorMessage(emailInput, "Email is a required field.");
       return false;
     }
 
-    // If the email address does not contain an "@" symbol, show an error message and return false
-    if (value.indexOf("@") === -1) {
-      showErrorMessage(emailInput, "You must enter a valid email address");
-      return false;
-    }
-
-    // If the email address does not contain a ".", show an error message and return false
-    if (value.indexOf(".") === -1) {
-      showErrorMessage(emailInput, "You must enter a valid email address");
+    // If the email address does not match the pattern, show an error message and return false
+    if (!pattern.test(value)) {
+      showErrorMessage(emailInput, "You must enter a valid email address.");
       return false;
     }
 
@@ -76,9 +77,9 @@
 
   function validateForm() {
     let isValidEmail = validateEmail();
-    let isValidPassword = validateName();
+    let isValidName = validateName();
     // Check if both email and name inputs are valid
-    return validateEmail() && validateName();
+    return isValidEmail && isValidName;
   }
 
   // Add event listener for form submission
@@ -94,5 +95,4 @@
   // Add event listeners for Email and Name inputs
   emailInput.addEventListener("input", validateEmail);
   nameInput.addEventListener("input", validateName);
-
 })();
