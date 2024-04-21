@@ -235,7 +235,15 @@ a:active {
 .project-inactive {
   background-color: #328dc17c;
   text-align: center;
-  padding-top: 45px;
+}
+
+.tba__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .project-list__link {
