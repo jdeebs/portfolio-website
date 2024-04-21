@@ -125,11 +125,17 @@ a:active {
   height: 50px;
 }
 
+.profile-container__wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--space-lg);
+}
+
 .profile-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto var(--space-lg) auto;
+  margin: 0 var(--space-sm) 0 var(--space-sm);
   max-width: 700px;
   background-color: #0073a5;
   border: double 4px transparent;
@@ -389,6 +395,7 @@ tbody tr:nth-child(even) {
   display: flex;
   flex-direction: column;
   align-items: start;
+  margin-bottom: var(--space-lg); 
 }
 
 .contact-inputs {
@@ -420,7 +427,6 @@ tbody tr:nth-child(even) {
   max-width: 100%;
   height: auto;
   display: block;
-  margin-top: var(--space-lg);
   margin-bottom: var(--space-lg);
 }
 
