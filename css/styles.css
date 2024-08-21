@@ -19,6 +19,9 @@ Background Color (Ivory Black): #1D2731;
   --header-font-size: 2.4em;
   --medium-font-size: 1.6em;
   --small-font-size: 0.6em;
+  --header-font-size: 2.4em;
+  --medium-font-size: 1.6em;
+  --small-font-size: 0.6em;
   --space-unit: 1em;
   --space-sm: calc(0.75 * var(--space-unit));
   --space-md: calc(1.25 * var(--space-unit));
@@ -57,6 +60,7 @@ ul {
 a {
   color: var(--secondary-text-color);
   font-size: var(--medium-font-size);
+  font-size: var(--medium-font-size);
   transition: font-size 0.3s ease;
 }
 
@@ -71,6 +75,7 @@ a:focus {
 }
 
 a:active {
+  font-size: var(--medium-font-size);
   font-size: var(--medium-font-size);
   text-decoration: none;
 }
@@ -91,6 +96,10 @@ a:active {
   align-items: center;
   font-size: calc(0.5 * var(--medium-font-size));
   font-weight: 800;
+  text-decoration: none;
+  line-height: 2em;
+  width: 150px;
+  height: 50px;
   background-color: var(--primary-color);
   color: var(--text-color);
   text-decoration: none;
