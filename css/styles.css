@@ -242,6 +242,7 @@ a:focus {
 }
 
 .project-list__item {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -293,6 +294,25 @@ a:focus {
   transition: transform 1s ease, box-shadow 0.3s ease, background-color 1s ease;
 }
 
+.preview-image {
+  position: absolute;
+  bottom: 75%; /* Position it above the link */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: auto;
+  border-radius: var(--rounded-borders);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+.project-list__link:hover + .preview-image,
+.project-list__link:focus + .preview-image {
+  opacity: 1;
+  visibility: visible;
+}
+
 .project-list__link:hover,
 .project-list__link:focus {
   background-color: var(--secondary-text-color);
@@ -302,6 +322,7 @@ a:focus {
 }
 
 .project-list__link-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
