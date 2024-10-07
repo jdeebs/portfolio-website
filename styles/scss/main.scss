@@ -1,7 +1,24 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/*
+Colors used
 
-    font-family: 'Work Sans', sans-serif;
+Text Color (White): #eee;
+Secondary Text Color (Gold Leaf): #D9B310;
+Primary Color (Prussian Blue): #0B3C5D;
+Secondary Color (Sky Blue): #328CC1;
+Background Color (Ivory Black): #1D2731;
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Work Sans", sans-serif;
+}
+
+body {
+  background-color: #1d2731;
+  color: white;
+  text-align: center;
 }
