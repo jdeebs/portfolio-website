@@ -27,36 +27,89 @@ body {
 }
 
 .container {
-    width: 100%;
-    max-width: 1600px;
-    margin: 0 auto;
-    padding-left: 128px;
-    padding-right: 128px;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-left: 128px;
+  padding-right: 128px;
 
-    @media (max-width: 1024px) {
-        padding-left: 64px;
-        padding-right: 64px;
-    }
-    @media (max-width: 767px) {
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-    @media (max-width: 480px) {
-        padding-left: 24px;
-        padding-right: 24px;
-    }
-    @media (max-width: 320px) {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
+  @media (max-width: 1024px) {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+  @media (max-width: 767px) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  @media (max-width: 480px) {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  @media (max-width: 320px) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
 section {
-    h2 {
-        text-align: center;
-        margin-bottom: 32px;
-        text-transform: uppercase;
+  h2 {
+    text-align: center;
+    margin-bottom: 32px;
+    text-transform: uppercase;
 
-        font-size: 32px;
-    }
+    font-size: 32px;
+  }
 }
+
+.projects {
+  padding-top: 64px;
+  padding-bottom: 64px;
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px;
+    margin-bottom: 32px;
+
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 767px) {
+        grid-template-columns: 1fr;
+    }
+  }
+}
+
+.experience {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  
+    .experience-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 16px;
+      margin-bottom: 32px;
+  
+      @media (max-width: 768px) {
+          grid-template-columns: repeat(2, 1fr);
+      }
+      @media (max-width: 767px) {
+          grid-template-columns: 1fr;
+      }
+
+      .experience-item {
+        display: flex;
+        flex-direction: column;
+
+        .experience-company {
+            display: flex;
+            text-align: left;
+            gap: 10px;
+            
+            img {
+                max-width: 35px;
+            }
+        }
+      }
+    }
+  }
