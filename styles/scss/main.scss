@@ -1,13 +1,10 @@
-/*
-Colors used
-
-Text Color (White): #eee;
-Secondary Text Color (Gold Leaf): #D9B310;
-Primary Color (Prussian Blue): #0B3C5D;
-Secondary Color (Sky Blue): #328CC1;
-Background Color (Ivory Black): #1D2731;
-
-*/
+:root {
+  --text-color: #eee;
+  --primary: #0b3c5d;
+  --secondary: #328cc1;
+  --highlight: #d9b310;
+  --background: #1d2731;
+}
 
 // CSS Normalize
 @import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css";
@@ -21,21 +18,30 @@ Background Color (Ivory Black): #1D2731;
 }
 
 body {
-  background-color: #1d2731;
-  color: white;
+  background-color: var(--background);
+  color: var(--text-color);
   text-align: center;
 }
 
 .landing {
-    img {
-        width: 200px;
-    }
+  h1 {
+    font-weight: 300;
+  }
+  img {
+    width: 200px;
+  }
 }
 
 .socials {
-    img {
-        max-width: 40px;
-    }
+  background-color: var(--primary);
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .container {
@@ -68,8 +74,17 @@ section {
     text-align: center;
     margin-bottom: 64px;
     text-transform: uppercase;
-
     font-size: 32px;
+    font-weight: 300;
+  }
+
+  h3 {
+    font-weight: 500;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 400;
   }
 }
 
@@ -84,107 +99,115 @@ section {
     margin-bottom: 32px;
 
     @media (max-width: 768px) {
-        grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
     @media (max-width: 767px) {
-        grid-template-columns: 1fr;
+      grid-template-columns: 1fr;
     }
   }
+
   .tech-icons {
     img {
-        max-width: 40px;
+      max-width: 40px;
     }
   }
 }
 
 .experience {
+  display: grid;
+  padding-top: 64px;
+  padding-bottom: 64px;
+
+  .experience-grid {
     display: grid;
-    padding-top: 64px;
-    padding-bottom: 64px;
-  
-    .experience-grid {
-      display: grid;
-      justify-items: center;
-      grid-template-columns: repeat(3, 1fr);
-      grid-gap: 36px;
-  
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 36px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 767px) {
+      grid-template-columns: 1fr;
+    }
+
+    .experience-item {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      text-align: left;
+      gap: 10px;
+
       @media (max-width: 768px) {
-          grid-template-columns: repeat(2, 1fr);
+        width: 300px;
       }
-      @media (max-width: 767px) {
-          grid-template-columns: 1fr;
+      @media (max-width: 480px) {
+        width: 200px;
       }
 
-      .experience-item {
+      .experience-company {
+        display: flex;
+        margin-bottom: 20px;
+        background-color: var(--primary);
+        border-radius: 4px;
+        padding: 20px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+        img {
+          width: 35px;
+          height: 35px;
+          margin-right: 10px;
+        }
+      }
+
+      .experience-position {
         display: flex;
         flex-direction: column;
         position: relative;
-        text-align: left;
-        gap: 10px;
-        
-        @media (max-width: 768px) {
-            width: 300px;
-        }
-        @media (max-width: 480px) {
-            width: 200px;
+        margin-bottom: 60px;
+        padding-left: 40px;
+
+        .experience-title {
+          font-weight: 300;
         }
 
-        .experience-company {
-            display: flex;
-            margin-bottom: 20px;
-
-            img {
-                width: 35px;
-                height: 35px;
-                margin-right: 10px;
-            }
+        .experience-date {
+          font-weight: 300;
+          font-size: 14px;
+          font-style: italic;
+          opacity: 0.7;
         }
 
-        .experience-position {
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            margin-bottom: 60px;
-            padding-left: 40px;
+        // Add bullet points before each experience position
+        &::before {
+          content: "";
+          position: absolute;
+          margin-left: 10px;
+          left: 0; // Bullet point position
+          top: 15px;
+          height: 10px;
+          width: 10px;
+          border-radius: 50%;
+          background-color: var(--primary);
+        }
 
-            .experience-title {
-                font-weight: 500;
-            }
-            .experience-date {
-                font-style: italic;
-                opacity: .7;
-            }
+        // Add vertical line connecting bullet points
+        &::after {
+          content: "";
+          position: absolute;
+          margin-left: 10px;
+          left: 4px;
+          top: 30px;
+          bottom: -80px;
+          width: 2px;
+          background-color: var(--primary);
+        }
 
-            // Add bullet points before each experience position
-            &::before {
-                content: "";
-                position: absolute;
-                margin-left: 10px;
-                left: 0; // Bullet point position
-                top: 15px;
-                height: 10px;
-                width: 10px;
-                border-radius: 50%;
-                background-color: #0B3C5D;
-            }
-
-            // Add vertical line connecting bullet points
-            &::after {
-                content: "";
-                position: absolute;
-                margin-left: 10px;
-                left: 4px;
-                top: 30px;
-                bottom: -80px;
-                width: 2px;
-                background-color: #0B3C5D;
-            }
-
-            // Remove vertical line after the last experience position
-            &:last-of-type::after {
-                display: none;
-            }
+        // Remove vertical line after the last experience position
+        &:last-of-type::after {
+          display: none;
         }
       }
     }
   }
+}
