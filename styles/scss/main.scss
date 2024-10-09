@@ -4,6 +4,13 @@
   --secondary: #328cc1;
   --highlight: #d9b310;
   --background: #1d2731;
+
+  /* Global spacing variables */
+  --spacing-xs: 8px; /* Extra small spacing */
+  --spacing-sm: 16px; /* Small spacing */
+  --spacing-md: 32px; /* Medium spacing */
+  --spacing-lg: 64px; /* Large spacing */
+  --spacing-xl: 128px; /* Extra large spacing */
 }
 
 // CSS Normalize
@@ -26,16 +33,22 @@ body {
 .landing {
   h1 {
     font-weight: 300;
+    margin-bottom: 0;
+  }
+  h3 {
+    margin-bottom: var(--spacing-md);
   }
   img {
     width: 200px;
+    border-radius: 50%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   }
 }
 
 .socials {
   background-color: var(--primary);
   border-radius: 4px;
-  padding: 10px;
+  padding: var(--spacing-sm);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 
   img {
@@ -48,31 +61,31 @@ body {
   width: 100%;
   max-width: 1600px;
   margin: 0 auto;
-  padding-left: 128px;
-  padding-right: 128px;
+  padding-left: var(--spacing-xl);
+  padding-right: var(--spacing-xl);
 
   @media (max-width: 1024px) {
-    padding-left: 64px;
-    padding-right: 64px;
+    padding-left: var(--spacing-lg);
+    padding-right: var(--spacing-lg);
   }
   @media (max-width: 767px) {
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: var(--spacing-md);
+    padding-right: var(--spacing-md);
   }
   @media (max-width: 480px) {
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: var(--spacing-sm);
+    padding-right: var(--spacing-sm);
   }
   @media (max-width: 320px) {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: var(--spacing-xs);
+    padding-right: var(--spacing-xs);
   }
 }
 
 section {
   h2 {
     text-align: center;
-    margin-bottom: 64px;
+    margin-bottom: var(--spacing-lg);
     text-transform: uppercase;
     font-size: 32px;
     font-weight: 300;
@@ -89,14 +102,14 @@ section {
 }
 
 .projects {
-  padding-top: 64px;
-  padding-bottom: 64px;
+  padding-top: var(--spacing-lg);
+  padding-bottom: var(--spacing-lg);
 
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 16px;
-    margin-bottom: 32px;
+    grid-gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
 
     @media (max-width: 768px) {
       grid-template-columns: repeat(2, 1fr);
@@ -115,20 +128,20 @@ section {
 
 .experience {
   display: grid;
-  padding-top: 64px;
-  padding-bottom: 64px;
+  padding-top: var(--spacing-lg);
+  padding-bottom: var(--spacing-lg);
 
   .experience-grid {
     display: grid;
-    justify-items: center;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 36px;
+    grid-gap: var(--spacing-lg);
 
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
       grid-template-columns: repeat(2, 1fr);
     }
     @media (max-width: 767px) {
       grid-template-columns: 1fr;
+      justify-items: center;
     }
 
     .experience-item {
@@ -136,7 +149,7 @@ section {
       flex-direction: column;
       position: relative;
       text-align: left;
-      gap: 10px;
+      gap: var(--spacing-xs);
 
       @media (max-width: 768px) {
         width: 300px;
@@ -147,16 +160,22 @@ section {
 
       .experience-company {
         display: flex;
-        margin-bottom: 20px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: var(--spacing-lg);
         background-color: var(--primary);
         border-radius: 4px;
-        padding: 20px;
+        padding: var(--spacing-md);
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+        @media (max-width: 480px) {
+          // padding-left: 8px;
+        }
 
         img {
           width: 35px;
           height: 35px;
-          margin-right: 10px;
+          margin-right: var(--spacing-xs);
         }
       }
 
@@ -164,8 +183,8 @@ section {
         display: flex;
         flex-direction: column;
         position: relative;
-        margin-bottom: 60px;
-        padding-left: 40px;
+        margin-bottom: var(--spacing-lg);
+        padding-left: var(--spacing-lg);
 
         .experience-title {
           font-weight: 300;
@@ -178,12 +197,11 @@ section {
           opacity: 0.7;
         }
 
-        // Add bullet points before each experience position
         &::before {
           content: "";
           position: absolute;
           margin-left: 10px;
-          left: 0; // Bullet point position
+          left: 0;
           top: 15px;
           height: 10px;
           width: 10px;
@@ -191,7 +209,6 @@ section {
           background-color: var(--primary);
         }
 
-        // Add vertical line connecting bullet points
         &::after {
           content: "";
           position: absolute;
@@ -203,7 +220,6 @@ section {
           background-color: var(--primary);
         }
 
-        // Remove vertical line after the last experience position
         &:last-of-type::after {
           display: none;
         }
