@@ -26,6 +26,18 @@ body {
   text-align: center;
 }
 
+.landing {
+    img {
+        width: 200px;
+    }
+}
+
+.socials {
+    img {
+        max-width: 40px;
+    }
+}
+
 .container {
   width: 100%;
   max-width: 1600px;
@@ -78,6 +90,11 @@ section {
         grid-template-columns: 1fr;
     }
   }
+  .tech-icons {
+    img {
+        max-width: 40px;
+    }
+  }
 }
 
 .experience {
@@ -107,7 +124,7 @@ section {
             gap: 10px;
 
             img {
-                max-width: 35px;
+                max-height: 35px;
             }
         }
 
