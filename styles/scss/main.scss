@@ -59,10 +59,10 @@ body {
 }
 
 .socials {
-  background-color: var(--primary);
-  border-radius: 4px;
-  padding: var(--spacing-sm);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+//   background-color: var(--primary);
+//   border-radius: 4px;
+//   padding: var(--spacing-sm);
+//   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 
   img {
     width: 40px;
@@ -99,7 +99,7 @@ section {
     text-align: center;
     margin-bottom: var(--spacing-lg);
     text-transform: uppercase;
-    font-size: 32px;
+    font-size: 40px;
     font-weight: 300;
   }
 
@@ -109,6 +109,7 @@ section {
 
   p {
     margin: 0;
+    line-height: 2;
   }
 }
 
@@ -150,9 +151,11 @@ section {
         align-items: center;
         h3 {
           margin-bottom: var(--spacing-md);
+          text-transform: uppercase;
+          font-weight: 400;
+          font-size: 28px;
         }
         p {
-          font-weight: 300;
           margin-bottom: var(--spacing-md);
         }
         h5 {
