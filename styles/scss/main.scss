@@ -22,6 +22,10 @@
   box-sizing: border-box;
 
   font-family: "Work Sans", sans-serif;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 body {
@@ -31,17 +35,25 @@ body {
 }
 
 .landing {
-  h1 {
-    font-weight: 300;
-    margin-bottom: 0;
-  }
-  h3 {
-    margin-bottom: var(--spacing-md);
-  }
   img {
     width: 200px;
+    margin-bottom: var(--spacing-lg);
     border-radius: 50%;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  h1 {
+    font-weight: 300;
+    margin: 0;
+  }
+
+  h3 {
+    font-weight: 300;
+    margin-bottom: var(--spacing-lg);
+  }
+
+  p {
+    margin-bottom: var(--spacing-lg);
   }
 }
 
@@ -108,20 +120,65 @@ section {
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: var(--spacing-sm);
-    margin-bottom: var(--spacing-md);
+    grid-gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
 
-    @media (max-width: 768px) {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    @media (max-width: 767px) {
-      grid-template-columns: 1fr;
-    }
-  }
+    @media (max-width: 1280px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @media (max-width: 767px) {
+        grid-template-columns: 1fr;
+      }
 
-  .tech-icons {
-    img {
-      max-width: 40px;
+    .project {
+      background-color: var(--primary);
+      border-radius: 4px;
+      padding: var(--spacing-sm);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      width: 100%;
+
+      @media (max-width: 480px) {
+        padding-left: var(--spacing-xs);
+        padding-right: var(--spacing-xs);
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h3 {
+          margin-bottom: var(--spacing-md);
+        }
+        p {
+          font-weight: 300;
+          margin-bottom: var(--spacing-md);
+        }
+        h5 {
+          font-weight: 400;
+        }
+
+        .tech-icons {
+          display: flex;
+          justify-content: center;
+          padding: var(--spacing-md);
+          padding-top: var(--spacing-xs);
+          gap: var(--spacing-md);
+          img {
+            max-width: 40px;
+          }
+        }
+        .project-buttons {
+          display: flex;
+          justify-content: space-around;
+
+          .button {
+            background-color: var(--secondary);
+            border-radius: 4px;
+            padding: 6px;
+            box-shadow: 0 4px 0 var(--background), 0 6px 15px rgba(0, 0, 0, 0.2);
+          }
+        }
+      }
     }
   }
 }
