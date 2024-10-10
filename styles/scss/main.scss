@@ -1,20 +1,21 @@
 :root {
+  // Global color variables
   --text-color: #eee;
   --primary: #0b3c5d;
   --secondary: #328cc1;
   --highlight: #d9b310;
   --background: #1d2731;
 
-  /* Global spacing variables */
-  --spacing-xs: 8px; /* Extra small spacing */
-  --spacing-sm: 16px; /* Small spacing */
-  --spacing-md: 32px; /* Medium spacing */
-  --spacing-lg: 64px; /* Large spacing */
-  --spacing-xl: 128px; /* Extra large spacing */
+  // Global spacing variables
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 32px;
+  --spacing-lg: 64px;
+  --spacing-xl: 128px;
 }
 
 // CSS Normalize
-@import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
 
 * {
   margin: 0;
@@ -95,6 +96,9 @@ body {
 }
 
 section {
+  padding-top: var(--spacing-xl);
+  padding-bottom: var(--spacing-xl);
+
   h2 {
     text-align: center;
     margin-bottom: var(--spacing-lg);
@@ -108,15 +112,11 @@ section {
   }
 
   p {
-    font-size: 18px;
-    font-weight: 400;
+    margin: 0;
   }
 }
 
 .projects {
-  padding-top: var(--spacing-lg);
-  padding-bottom: var(--spacing-lg);
-
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -124,11 +124,14 @@ section {
     margin-bottom: var(--spacing-lg);
 
     @media (max-width: 1280px) {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      @media (max-width: 767px) {
-        grid-template-columns: 1fr;
-      }
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 767px) {
+      grid-template-columns: 1fr;
+    }
+    @media (max-width: 320px) {
+      grid-template-columns: minmax(100px, 1fr);
+    }
 
     .project {
       background-color: var(--primary);
@@ -166,12 +169,25 @@ section {
           img {
             max-width: 40px;
           }
+          @media (max-width: 320px) {
+            gap: var(--spacing-xs);
+            img {
+                width: 30px;
+              }
+          }
         }
         .project-buttons {
           display: flex;
           justify-content: space-around;
+          gap: var(--spacing-xs);
+
+          @media (max-width: 320px) {
+            flex-direction: column;
+            gap: var(--spacing-xs);
+          }
 
           .button {
+            width: 120px;
             background-color: var(--secondary);
             border-radius: 4px;
             padding: 6px;
@@ -185,8 +201,6 @@ section {
 
 .experience {
   display: grid;
-  padding-top: var(--spacing-lg);
-  padding-bottom: var(--spacing-lg);
 
   .experience-grid {
     display: grid;
