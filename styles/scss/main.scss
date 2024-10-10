@@ -210,19 +210,24 @@ section {
 }
 
 .experience {
-  display: grid;
-
   .experience-grid {
     display: grid;
+    justify-items: center;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: var(--spacing-lg);
 
-    @media (max-width: 1024px) {
-      grid-template-columns: repeat(2, 1fr);
+    @media (max-width: 1300px) {
+        grid-template-columns: repeat(2, 1fr);
     }
     @media (max-width: 767px) {
       grid-template-columns: 1fr;
       justify-items: center;
+    }
+    @media (max-width: 480px) {
+        grid-template-columns: minmax(200px, 1fr);
+      }
+    @media (max-width: 320px) {
+      grid-template-columns: minmax(100px, 1fr);
     }
 
     .experience-item {
@@ -230,17 +235,16 @@ section {
       flex-direction: column;
       position: relative;
       text-align: left;
-      gap: var(--spacing-xs);
 
-      @media (max-width: 768px) {
-        width: 300px;
-      }
-      @media (max-width: 480px) {
-        width: 200px;
+      @media (max-width: 320px) {
+        padding-left: var(--spacing-xs);
+        padding-right: var(--spacing-xs);
       }
 
       .experience-company {
         display: flex;
+        width: 300px;
+        height: 100px;
         justify-content: center;
         align-items: center;
         margin-bottom: var(--spacing-lg);
@@ -249,9 +253,11 @@ section {
         padding: var(--spacing-md);
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 
-        @media (max-width: 480px) {
-          // padding-left: 8px;
-        }
+        @media (max-width: 320px) {
+            max-width: 90vw;
+            padding-left: 0;
+            padding-right: 0;
+          }
 
         img {
           width: 35px;
@@ -263,9 +269,10 @@ section {
       .experience-position {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        max-width: 200px;
         position: relative;
-        margin-bottom: var(--spacing-lg);
-        padding-left: var(--spacing-lg);
+        padding-bottom: var(--spacing-xl);
 
         .experience-title {
           font-weight: 300;
@@ -278,29 +285,32 @@ section {
           opacity: 0.7;
         }
 
+        // Bullet points
         &::before {
           content: "";
           position: absolute;
           margin-left: 10px;
           left: 0;
           top: 15px;
-          height: 10px;
-          width: 10px;
+          height: 14px;
+          width: 14px;
           border-radius: 50%;
           background-color: var(--primary);
         }
 
+        // Vertical line
         &::after {
           content: "";
           position: absolute;
           margin-left: 10px;
-          left: 4px;
-          top: 30px;
-          bottom: -80px;
+          left: 6px;
+          top: 34px;
+          bottom: -10px;
           width: 2px;
           background-color: var(--primary);
         }
 
+        // Stop vertical line after last position
         &:last-of-type::after {
           display: none;
         }
