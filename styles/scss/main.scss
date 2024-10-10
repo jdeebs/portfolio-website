@@ -117,12 +117,12 @@ section {
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: var(--spacing-lg);
+    grid-gap: var(--spacing-xl);
     margin-bottom: var(--spacing-lg);
 
     @media (max-width: 943px) {
         grid-template-columns: repeat(1, 1fr);
-        grid-gap: var(--spacing-md);
+        grid-gap: var(--spacing-lg);
         margin-bottom: var(--spacing-md);
     }
     @media (max-width: 480px) {
@@ -217,7 +217,7 @@ section {
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: var(--spacing-lg);
+    grid-gap: var(--spacing-sm);
 
     @media (max-width: 1300px) {
         grid-template-columns: repeat(2, 1fr);
@@ -275,7 +275,7 @@ section {
         align-items: center;
         max-width: 200px;
         position: relative;
-        padding-bottom: var(--spacing-xl);
+        padding-bottom: var(--spacing-lg);
 
         .experience-title {
           font-weight: 300;
