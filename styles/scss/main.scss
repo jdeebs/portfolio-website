@@ -77,11 +77,7 @@ body {
   padding-left: var(--spacing-xl);
   padding-right: var(--spacing-xl);
 
-  @media (max-width: 1024px) {
-    padding-left: var(--spacing-lg);
-    padding-right: var(--spacing-lg);
-  }
-  @media (max-width: 767px) {
+  @media (max-width: 943px) {
     padding-left: var(--spacing-md);
     padding-right: var(--spacing-md);
   }
@@ -119,26 +115,28 @@ section {
 .projects {
   .projects-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: var(--spacing-lg);
     margin-bottom: var(--spacing-lg);
 
-    @media (max-width: 1280px) {
-      grid-template-columns: repeat(2, 1fr);
+    @media (max-width: 943px) {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: var(--spacing-md);
+        margin-bottom: var(--spacing-md);
     }
-    @media (max-width: 767px) {
-      grid-template-columns: 1fr;
-    }
+    @media (max-width: 480px) {
+        grid-template-columns: minmax(200px, 1fr);
+      }
     @media (max-width: 320px) {
       grid-template-columns: minmax(100px, 1fr);
     }
 
     .project {
+      display: flex;
       background-color: var(--primary);
       border-radius: 4px;
       padding: var(--spacing-sm);
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-      width: 100%;
 
       @media (max-width: 480px) {
         padding-left: var(--spacing-xs);
@@ -148,6 +146,7 @@ section {
       .content {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         align-items: center;
         h3 {
           margin-bottom: var(--spacing-md);
@@ -173,23 +172,32 @@ section {
           @media (max-width: 320px) {
             gap: var(--spacing-xs);
             img {
-                width: 30px;
-              }
+              width: 30px;
+            }
           }
         }
         .project-buttons {
           display: flex;
+          justify-content: center;
           align-items: stretch;
-          gap: var(--spacing-xs);
+          flex-shrink: 1;
+          flex-wrap: wrap;
+          gap: var(--spacing-md);
 
+          @media (max-width: 767px) {
+            gap: var(--spacing-sm);
+          }
           @media (max-width: 320px) {
-            flex-wrap: wrap;
             gap: var(--spacing-xs);
           }
 
           .button {
             display: flex;
-            width: 120px;
+            flex-direction: column;
+            justify-content: center;
+            flex: 1;
+            min-width: 120px;
+            height: 50px;
             background-color: var(--secondary);
             border-radius: 4px;
             padding: 6px;
