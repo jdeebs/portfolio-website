@@ -35,6 +35,38 @@ body {
   text-align: center;
 }
 
+header {
+  color: var(--background);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: var(--primary);
+
+  .container {
+    padding-top: var(--spacing-xs);
+    padding-bottom: var(--spacing-xs);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .top {
+      width: 40px;
+      height: 40px;
+      border: none;
+      background-color: var(--secondary);
+      border-radius: 4px;
+      box-shadow: -4px 6px 0 var(--background), 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+    nav {
+      display: grid;
+      grid-gap: var(--spacing-xs);
+      grid-template-columns: repeat(4, auto);
+    }
+  }
+}
+
 .landing {
   img {
     width: 200px;
@@ -59,10 +91,10 @@ body {
 }
 
 .socials {
-//   background-color: var(--primary);
-//   border-radius: 4px;
-//   padding: var(--spacing-sm);
-//   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  //   background-color: var(--primary);
+  //   border-radius: 4px;
+  //   padding: var(--spacing-sm);
+  //   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 
   img {
     width: 40px;
@@ -121,13 +153,13 @@ section {
     margin-bottom: var(--spacing-lg);
 
     @media (max-width: 943px) {
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: var(--spacing-lg);
-        margin-bottom: var(--spacing-md);
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: var(--spacing-lg);
+      margin-bottom: var(--spacing-md);
     }
     @media (max-width: 480px) {
-        grid-template-columns: minmax(200px, 1fr);
-      }
+      grid-template-columns: minmax(200px, 1fr);
+    }
     @media (max-width: 320px) {
       grid-template-columns: minmax(100px, 1fr);
     }
@@ -220,15 +252,15 @@ section {
     grid-gap: var(--spacing-sm);
 
     @media (max-width: 1300px) {
-        grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
     @media (max-width: 767px) {
       grid-template-columns: 1fr;
       justify-items: center;
     }
     @media (max-width: 480px) {
-        grid-template-columns: minmax(200px, 1fr);
-      }
+      grid-template-columns: minmax(200px, 1fr);
+    }
     @media (max-width: 320px) {
       grid-template-columns: minmax(100px, 1fr);
     }
@@ -257,10 +289,10 @@ section {
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 
         @media (max-width: 320px) {
-            max-width: 90vw;
-            padding-left: 0;
-            padding-right: 0;
-          }
+          max-width: 90vw;
+          padding-left: 0;
+          padding-right: 0;
+        }
 
         img {
           width: 35px;
