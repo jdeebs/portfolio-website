@@ -18,25 +18,26 @@
     <header>
       <div class="container">
         <nav>
-          <button class="top">Top
-          </button>
-          <!-- <a href="#">Home</a>
-          <a href="#">Projects</a>
-          <a href="#">Experience</a>
-          <a href="#">Contact</a> -->
+          <a href="#">
+            <button class="top">Top</button>
+          </a>
+          
+          <!-- Hamburger menu -->
+          <label for="menu" tabindex="0">
+            <img src="assets/icons/hamburger_icon.svg" width="40" height="40" />
+            
+          </label>
+          <input id="menu" type="checkbox" />
+
+          <!-- Collapsable menu -->
+          <ul>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Experience</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
         </nav>
-        <button class="hamburger">Hamburger
-          <span class="bar"></span>
-        </button>
       </div>
     </header>
-
-    <nav class="mobile-nav">
-      <a href="#">Home</a>
-      <a href="#">Projects</a>
-      <a href="#">Experience</a>
-      <a href="#">Contact</a>
-    </nav>
 
     <main>
       <section class="landing">
@@ -238,7 +239,7 @@
               </div>
               <div class="experience-position">
                 <p class="experience-title">
-                  Full-Stack Web <br>Development <br>Bootcamp
+                  Full-Stack Web <br />Development <br />Bootcamp
                 </p>
                 <p class="experience-date">Mar 2024 - Present</p>
               </div>

@@ -60,9 +60,66 @@ header {
       box-shadow: -4px 6px 0 var(--background), 0 6px 15px rgba(0, 0, 0, 0.2);
     }
     nav {
-      display: grid;
-      grid-gap: var(--spacing-xs);
-      grid-template-columns: repeat(4, auto);
+      display: flex;
+      flex: auto;
+      justify-content: space-between;
+      align-items: center;
+
+      ul {
+        display: flex;
+        gap: var(--spacing-md);
+        list-style-type: none;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 300;
+
+        li {
+          display: inline-flex;
+          justify-content: flex-end;
+        }
+      }
+
+      // Make the checkbox and label disappear on larger screens
+      input[type="checkbox"],
+      label {
+        display: none;
+      }
+
+      @media (max-width: 480px) {
+        // If checkbox is not marked, the menu list is not displayed
+        input[type="checkbox"]:not(:checked) + ul {
+          display: none;
+        }
+
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 0;
+        margin-right: 0;
+
+        // Style menu icon, the checkbox stays hidden
+        label {
+          display: flex;
+        }
+
+        // Display as vertical list
+        ul {
+          display: block;
+
+          // We have two lists: the first one are the always visible items in the menu bar. The second one is the one that will be hidden
+          &:last-child {
+            width: 100%;
+            flex-basis: 100%;
+          }
+
+          li {
+            margin-bottom: 0;
+            width: 100%;
+            text-align: right;
+            padding: var(--spacing-xs);
+            padding-right: 0;
+          }
+        }
+      }
     }
   }
 }
