@@ -79,6 +79,20 @@ header {
           display: inline-flex;
           justify-content: flex-end;
         }
+
+        span {
+          box-shadow: 0 6px 16px rgba(0, 0, 0, 0);
+          border-radius: 4px;
+          transition: box-shadow 2s ease-in-out; 
+          transition: background-color 0.4s ease-in-out;
+        }
+
+        span:hover {
+          color: black;
+          background-color: var(--secondary);
+          border-radius: 4px;
+          box-shadow: 0px 4px 1px rgb(29, 39, 49, 1);
+        }
       }
 
       // Make the checkbox and label disappear on larger screens
@@ -128,20 +142,6 @@ header {
             text-align: right;
             padding: var(--spacing-xs);
             padding-right: 0;
-          }
-
-          span {
-            box-shadow: 0 6px 16px rgba(0, 0, 0, 0);
-            border-radius: 4px;
-            transition: box-shadow 2s ease-in-out; 
-            transition: background-color 0.4s ease-in-out;
-          }
-
-          span:hover {
-            color: black;
-            background-color: var(--secondary);
-            border-radius: 4px;
-            box-shadow: 0px 4px 1px rgb(29, 39, 49, 1);
           }
 
           li a {
