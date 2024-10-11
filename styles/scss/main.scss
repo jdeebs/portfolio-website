@@ -155,6 +155,9 @@ header {
 }
 
 .landing {
+  .profile-picture {
+    margin-bottom: var(--spacing-lg);
+  }
   img {
     width: 200px;
     border-radius: 50%;
@@ -172,6 +175,8 @@ header {
   }
 
   p {
+    max-width: 600px;
+    margin: 0 auto;
     margin-bottom: var(--spacing-lg);
   }
 }
@@ -440,5 +445,11 @@ section {
         }
       }
     }
+  }
+}
+
+.contact {
+  h3 {
+    margin-bottom: var(--spacing-lg);
   }
 }
