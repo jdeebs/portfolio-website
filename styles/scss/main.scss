@@ -42,7 +42,8 @@ header {
   left: 0;
   width: 100%;
   z-index: 99;
-  background-color: var(--primary);
+  // Transparent nav bar
+  background-color: rgb(11, 60, 93, .5);
 
   .container {
     padding-top: var(--spacing-xs);
@@ -85,27 +86,36 @@ header {
         display: none;
       }
 
-      @media (max-width: 480px) {
-        // If checkbox is not marked, the menu list is not displayed
-        input[type="checkbox"]:not(:checked) + ul {
-          display: none;
-        }
-
+      @media (max-width: 576px) {
         flex-direction: row;
         flex-wrap: wrap;
         margin-left: 0;
         margin-right: 0;
 
+        // If checkbox is not marked, the menu list is not displayed
+        input[type="checkbox"]:not(:checked) + ul {
+          display: none;
+          opacity: 0;
+          visibility: hidden;
+        }
+
+        // If checkbox is marked, menu list is displayed
+        input[type="checkbox"]:checked + ul {
+          display: block;
+          opacity: 1;
+          visibility: visible;
+        }
+
         // Style menu icon, the checkbox stays hidden
         label {
           display: flex;
+          cursor: pointer;
         }
 
         // Display as vertical list
         ul {
           display: block;
 
-          // We have two lists: the first one are the always visible items in the menu bar. The second one is the one that will be hidden
           &:last-child {
             width: 100%;
             flex-basis: 100%;
@@ -117,6 +127,11 @@ header {
             text-align: right;
             padding: var(--spacing-xs);
             padding-right: 0;
+          }
+
+          li a {
+            padding-top: var(--spacing-sm);
+            border-top: 1px solid var(--background);
           }
         }
       }
