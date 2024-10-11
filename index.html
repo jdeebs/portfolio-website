@@ -1,297 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
 
-    <link rel="stylesheet" href="./styles/css/main.css" />
-  </head>
-  <body>
-    <header>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="./styles/css/main.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="#">
+          <button class="top">Top</button>
+        </a>
+
+        <!-- Hamburger menu -->
+        <label for="menu" tabindex="0">
+          <img src="assets/icons/hamburger_icon.svg" width="40" height="40" />
+        </label>
+        <input id="menu" type="checkbox" />
+
+        <!-- Collapsable menu -->
+        <ul>
+          <li>
+            <a href="#"><span>Projects</span></a>
+          </li>
+          <li>
+            <a href="#"><span>Experience</span></a>
+          </li>
+          <li>
+            <a href="#"><span>Contact</span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="landing">
       <div class="container">
-        <nav>
-          <a href="#">
-            <button class="top">Top</button>
+        <img src="assets/images/profilepicture-1.jpg" />
+        <h1>Jacob DiBiase</h1>
+        <h3>Full Stack Developer</h3>
+        <p>
+          I strive to build innovative and accessible digital experiences that
+          have a meaningful impact. I'm dedicated to continuous learning, with
+          a focus on modern frameworks, efficient code, and user centered
+          design.
+        </p>
+        <div class="socials">
+          <a href="https://github.com/jdeebs" target="_blank">
+            <img src="assets/icons/211904_social_github_icon.svg" />
           </a>
-          
-          <!-- Hamburger menu -->
-          <label for="menu" tabindex="0">
-            <img src="assets/icons/hamburger_icon.svg" width="40" height="40" />
-            
-          </label>
-          <input id="menu" type="checkbox" />
-
-          <!-- Collapsable menu -->
-          <ul>
-            <li><a href="#"><span>Projects</span></a></li>
-            <li><a href="#"><span>Experience</span></a></li>
-            <li><a href="#"><span>Contact</span></a></li>
-          </ul>
-        </nav>
+          <a href="https://join.skype.com/invite/fchfvUg5hnXf" target="_blank">
+            <img src="assets/icons/104495_skype_icon.svg" />
+          </a>
+          <a href="https://www.linkedin.com/in/jacob-dibiase-2b87882b8" target="_blank">
+            <img src="assets/icons/104493_linkedin_icon.svg" />
+          </a>
+          <a href="https://medium.com/@jdibiase93" target="_blank">
+            <img src="assets/icons/medium_icon.svg" />
+          </a>
+          <a href="https://x.com/jdeebsdev" target="_blank">
+            <img src="assets/icons/11053969_x_logo_twitter_icon.svg" />
+          </a>
+        </div>
       </div>
-    </header>
+    </section>
 
-    <main>
-      <section class="landing">
-        <div class="container">
-          <img src="assets/images/profilepicture-1.jpg" />
-          <h1>Jacob DiBiase</h1>
-          <h3>Full Stack Developer</h3>
-          <p>
-            I strive to build innovative and accessible digital experiences that
-            have a meaningful impact. I'm dedicated to continuous learning, with
-            a focus on modern frameworks, efficient code, and user centered
-            design.
-          </p>
-          <div class="socials">
-            <img src="assets/icons/104493_linkedin_icon.svg" />
-            <img src="assets/icons/104495_skype_icon.svg" />
+    <section class="projects">
+      <div class="container">
+        <h2>PROJECTS</h2>
+
+        <div class="projects-grid">
+          <div class="project">
+            <div class="content">
+              <h3>Portfolio Website</h3>
+              <p>
+                This website! Redesigned with a focus on performance and
+                responsive design. No frameworks or libraries used.
+              </p>
+              <h5>Built with</h5>
+              <div class="tech-icons">
+                <img src="assets/icons/html5.svg" />
+                <img src="assets/icons/css3.svg" />
+              </div>
+              <div class="project-buttons">
+                <a href="https://github.com/jdeebs/portfolio-website" class="button" target="_blank">GitHub Repo</a>
+                <a href="https://jdeebs.github.io/portfolio-website/" class="button" target="_blank">Live Demo</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="content">
+              <h3>Pokedex App</h3>
+              <p>
+                A small web application that loads data from an external API
+                and enables the viewing of data points in detail.
+              </p>
+              <h5>Built with</h5>
+              <div class="tech-icons">
+                <img src="assets/icons/javascript.svg" />
+                <img src="assets/icons/bootstrap.svg" />
+                <img src="assets/icons/jquery.svg" />
+              </div>
+              <div class="project-buttons">
+                <a href="https://github.com/jdeebs/pokedex-app" class="button" target="_blank">GitHub Repo</a>
+                <a href="https://jdeebs.github.io/pokedex-app" class="button" target="_blank">Live Demo</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="content">
+              <h3>MovieMax App & Database</h3>
+              <p>
+                A single-page application built using React, connected with an
+                existing server-side REST API and MongoDB database I created.
+              </p>
+              <h5>Built with</h5>
+              <div class="tech-icons">
+                <img src="assets/icons/react.svg" />
+                <img src="assets/icons/bootstrap.svg" />
+                <img src="assets/icons/mongodb.svg" />
+              </div>
+              <div class="project-buttons">
+                <a href="https://github.com/jdeebs/moviemax-client" class="button" target="_blank">Frontend GitHub
+                  Repo</a>
+                <a href="https://github.com/jdeebs/moviemax" class="button" target="_blank">Backend GitHub Repo</a>
+                <a href="https://jdeebs-moviemax.netlify.app" class="button" target="_blank">Live Demo</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="content">
+              <h3>Meet App</h3>
+              <p>
+                A serverless PWA, built with React using a test-driven
+                development technique. Displays event details from a Google
+                Calendar API and visualized event data through charts.
+              </p>
+              <h5>Built with</h5>
+              <div class="tech-icons">
+                <img src="assets/icons/react.svg" />
+                <img src="assets/icons/jest.svg" />
+                <img src="assets/icons/aws-lambda.svg" />
+              </div>
+              <div class="project-buttons">
+                <a href="https://github.com/jdeebs/meet" class="button" target="_blank">GitHub Repo</a>
+                <a href="https://jdeebs.github.io/meet/" class="button" target="_blank">Live Demo</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="content">
+              <h3>MovieMax Angular App</h3>
+              <p>
+                A single-page application built using Angular, which allows
+                users to browse and access movie information. This app
+                interfaces with the same existing API and database used in the
+                React app.
+              </p>
+              <h5>Built with</h5>
+              <div class="tech-icons">
+                <img src="assets/icons/angular.svg" />
+                <img src="assets/icons/angular-material.svg" />
+                <img src="assets/icons/typeccript.svg" />
+              </div>
+              <div class="project-buttons">
+                <a href="https://github.com/jdeebs/moviemax-angular-client" class="button" target="_blank">GitHub
+                  Repo</a>
+                <a href="https://jdeebs.github.io/moviemax-angular-client" class="button" target="_blank">Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience">
+      <div class="container">
+        <h2>EXPERIENCE</h2>
+
+        <div class="experience-grid">
+          <div class="experience-item">
+            <div class="experience-company">
+              <img src="assets/icons/cf_logo.svg" />
+              <h3>Career<span>Foundry</span></h3>
+            </div>
+            <div class="experience-position">
+              <p class="experience-title">
+                Full-Stack Web <br />Development <br />Bootcamp
+              </p>
+              <p class="experience-date">Mar 2024 - Present</p>
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="experience-company">
+              <img src="assets/icons/Sprouts-Farmers-Market-Emblem.png" />
+              <h3>Sprouts Farmers Market</h3>
+            </div>
+            <div class="experience-position">
+              <p class="experience-title">Senior Meat Clerk</p>
+              <p class="experience-date">May 2023 - Present</p>
+            </div>
+            <div class="experience-position">
+              <p class="experience-title">Bakery Manager</p>
+              <p class="experience-date">Jun 2019 - May 2023</p>
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="experience-company">
+              <img src="assets/icons/frys_logo.svg" />
+              <h3>Fry's Food &amp; Drug</h3>
+            </div>
+            <div class="experience-position">
+              <p class="experience-title">Bakery Manager</p>
+              <p class="experience-date">Jun 2016 - Jun 2019</p>
+            </div>
+            <div class="experience-position">
+              <p class="experience-title">Deli Manager</p>
+              <p class="experience-date">Jan 2015 - Jun 2016</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="container">
+        <h2>CONTACT</h2>
+        <h3>jdibiase93@gmail.com</h3>
+
+        <div class="socials">
+          <a href="https://github.com/jdeebs" target="_blank">
             <img src="assets/icons/211904_social_github_icon.svg" />
-            <img src="assets/icons/medium_icon.svg" />
-            <img src="assets/icons/11053969_x_logo_twitter_icon.svg" />
-          </div>
-        </div>
-      </section>
-
-      <section class="projects">
-        <div class="container">
-          <h2>PROJECTS</h2>
-
-          <div class="projects-grid">
-            <div class="project">
-              <div class="content">
-                <h3>Portfolio Website</h3>
-                <p>
-                  This website! Redesigned with a focus on performance and
-                  responsive design. No frameworks or libraries used.
-                </p>
-                <h5>Built with</h5>
-                <div class="tech-icons">
-                  <img src="assets/icons/html5.svg" />
-                  <img src="assets/icons/css3.svg" />
-                </div>
-                <div class="project-buttons">
-                  <a
-                    href="https://github.com/jdeebs/portfolio-website"
-                    class="button"
-                    target="_blank"
-                    >GitHub Repo</a
-                  >
-                  <a
-                    href="https://jdeebs.github.io/portfolio-website/"
-                    class="button"
-                    target="_blank"
-                    >Live Demo</a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div class="project">
-              <div class="content">
-                <h3>Pokedex App</h3>
-                <p>
-                  A small web application that loads data from an external API
-                  and enables the viewing of data points in detail.
-                </p>
-                <h5>Built with</h5>
-                <div class="tech-icons">
-                  <img src="assets/icons/javascript.svg" />
-                  <img src="assets/icons/bootstrap.svg" />
-                  <img src="assets/icons/jquery.svg" />
-                </div>
-                <div class="project-buttons">
-                  <a
-                    href="https://github.com/jdeebs/pokedex-app"
-                    class="button"
-                    target="_blank"
-                    >GitHub Repo</a
-                  >
-                  <a
-                    href="https://jdeebs.github.io/pokedex-app"
-                    class="button"
-                    target="_blank"
-                    >Live Demo</a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div class="project">
-              <div class="content">
-                <h3>MovieMax App & Database</h3>
-                <p>
-                  A single-page application built using React, connected with an
-                  existing server-side REST API and MongoDB database I created.
-                </p>
-                <h5>Built with</h5>
-                <div class="tech-icons">
-                  <img src="assets/icons/react.svg" />
-                  <img src="assets/icons/bootstrap.svg" />
-                  <img src="assets/icons/mongodb.svg" />
-                </div>
-                <div class="project-buttons">
-                  <a
-                    href="https://github.com/jdeebs/moviemax-client"
-                    class="button"
-                    target="_blank"
-                    >Frontend GitHub Repo</a
-                  >
-                  <a
-                    href="https://github.com/jdeebs/moviemax"
-                    class="button"
-                    target="_blank"
-                    >Backend GitHub Repo</a
-                  >
-                  <a
-                    href="https://jdeebs-moviemax.netlify.app"
-                    class="button"
-                    target="_blank"
-                    >Live Demo</a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div class="project">
-              <div class="content">
-                <h3>Meet App</h3>
-                <p>
-                  A serverless PWA, built with React using a test-driven
-                  development technique. Displays event details from a Google
-                  Calendar API and visualized event data through charts.
-                </p>
-                <h5>Built with</h5>
-                <div class="tech-icons">
-                  <img src="assets/icons/react.svg" />
-                  <img src="assets/icons/jest.svg" />
-                  <img src="assets/icons/aws-lambda.svg" />
-                </div>
-                <div class="project-buttons">
-                  <a
-                    href="https://github.com/jdeebs/meet"
-                    class="button"
-                    target="_blank"
-                    >GitHub Repo</a
-                  >
-                  <a
-                    href="https://jdeebs.github.io/meet/"
-                    class="button"
-                    target="_blank"
-                    >Live Demo</a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div class="project">
-              <div class="content">
-                <h3>MovieMax Angular App</h3>
-                <p>
-                  A single-page application built using Angular, which allows
-                  users to browse and access movie information. This app
-                  interfaces with the same existing API and database used in the
-                  React app.
-                </p>
-                <h5>Built with</h5>
-                <div class="tech-icons">
-                  <img src="assets/icons/angular.svg" />
-                  <img src="assets/icons/angular-material.svg" />
-                  <img src="assets/icons/typeccript.svg" />
-                </div>
-                <div class="project-buttons">
-                  <a
-                    href="https://github.com/jdeebs/moviemax-angular-client"
-                    class="button"
-                    target="_blank"
-                    >GitHub Repo</a
-                  >
-                  <a
-                    href="https://jdeebs.github.io/moviemax-angular-client"
-                    class="button"
-                    target="_blank"
-                    >Live Demo</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="experience">
-        <div class="container">
-          <h2>EXPERIENCE</h2>
-
-          <div class="experience-grid">
-            <div class="experience-item">
-              <div class="experience-company">
-                <img src="assets/icons/cf_logo.svg" />
-                <h3>Career<span>Foundry</span></h3>
-              </div>
-              <div class="experience-position">
-                <p class="experience-title">
-                  Full-Stack Web <br />Development <br />Bootcamp
-                </p>
-                <p class="experience-date">Mar 2024 - Present</p>
-              </div>
-            </div>
-
-            <div class="experience-item">
-              <div class="experience-company">
-                <img src="assets/icons/Sprouts-Farmers-Market-Emblem.png" />
-                <h3>Sprouts Farmers Market</h3>
-              </div>
-              <div class="experience-position">
-                <p class="experience-title">Senior Meat Clerk</p>
-                <p class="experience-date">May 2023 - Present</p>
-              </div>
-              <div class="experience-position">
-                <p class="experience-title">Bakery Manager</p>
-                <p class="experience-date">Jun 2019 - May 2023</p>
-              </div>
-            </div>
-
-            <div class="experience-item">
-              <div class="experience-company">
-                <img src="assets/icons/frys_logo.svg" />
-                <h3>Fry's Food &amp; Drug</h3>
-              </div>
-              <div class="experience-position">
-                <p class="experience-title">Bakery Manager</p>
-                <p class="experience-date">Jun 2016 - Jun 2019</p>
-              </div>
-              <div class="experience-position">
-                <p class="experience-title">Deli Manager</p>
-                <p class="experience-date">Jan 2015 - Jun 2016</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="contact">
-        <div class="container">
-          <h2>CONTACT</h2>
-          <h3>jdibiase93@gmail.com</h3>
-
-          <div class="socials">
-            <img src="assets/icons/104493_linkedin_icon.svg" />
+          </a>
+          <a href="https://join.skype.com/invite/fchfvUg5hnXf" target="_blank">
             <img src="assets/icons/104495_skype_icon.svg" />
-            <img src="assets/icons/211904_social_github_icon.svg" />
+          </a>
+          <a href="https://www.linkedin.com/in/jacob-dibiase-2b87882b8" target="_blank">
+            <img src="assets/icons/104493_linkedin_icon.svg" />
+          </a>
+          <a href="https://medium.com/@jdibiase93" target="_blank">
             <img src="assets/icons/medium_icon.svg" />
+          </a>
+          <a href="https://x.com/jdeebsdev" target="_blank">
             <img src="assets/icons/11053969_x_logo_twitter_icon.svg" />
-          </div>
+          </a>
         </div>
-      </section>
-    </main>
-  </body>
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>
