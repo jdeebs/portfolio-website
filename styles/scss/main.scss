@@ -557,6 +557,27 @@ section {
 }
 
 .contact {
+  .contact-header {
+    position: relative;
+    display: inline-block;
+
+    h2 {
+      position: relative;
+      z-index: 2;
+    }
+
+    .triangle-icon {
+      width: 100px;
+      position: absolute;
+      top: -25%;
+      left: 25%;
+      transform: rotate(90deg);
+      
+      z-index: 1;
+      opacity: 0.5;
+    }
+  }
+
   h3 {
     margin-bottom: var(--spacing-lg);
 
