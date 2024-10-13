@@ -30,7 +30,8 @@
   }
 }
 
-*, html {
+*,
+html {
   scroll-behavior: smooth !important;
 }
 
@@ -64,6 +65,12 @@ header {
       background-color: var(--secondary);
       border-radius: 4px;
       box-shadow: -4px 6px 0 var(--background), 0 6px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.4s ease-out;
+    }
+    .top:active {
+      box-shadow: none;
+      transform: translate(-3px, 3px);
+      transition: transform 0.1s;
     }
     nav {
       display: flex;
@@ -88,19 +95,14 @@ header {
           background-color: var(--secondary);
           border-radius: 4px;
           box-shadow: 0px 4px 1px rgb(29, 39, 49, 1);
-          padding-left: .5rem;
-          padding-right: .5rem;
-        }
-
-        span:hover {
-          background-color: var(--secondary);
-          border-radius: 4px;
-          box-shadow: 0px 4px 1px rgb(29, 39, 49, 1);
+          padding-left: 0.5rem;
+          padding-right: 0.5rem;
+          transition: transform 0.4s ease-out;
         }
         span:active {
           display: flex;
           transform: translateY(2px);
-          transition: transform .1s;
+          transition: transform 0.1s ease-in-out;
           box-shadow: none;
         }
       }
@@ -260,7 +262,7 @@ section {
       max-width: 400px;
       height: auto;
       padding-left: var(--spacing-xs);
-        padding-right: var(--spacing-xs);
+      padding-right: var(--spacing-xs);
       border-radius: 30px;
 
       @media (max-width: 480px) {
@@ -359,17 +361,19 @@ section {
             background-color: var(--secondary);
             border-radius: 4px;
             padding: 6px;
-            box-shadow: 0 4px 0 var(--background), 0 6px 15px rgba(0, 0, 0, 0.2);
-            transition: all .4s ease-out;
+            box-shadow: -4px 6px 0 var(--background),
+              0 6px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.4s ease-out;
+            transition: opacity 0.4s ease-out;
           }
           .button:hover {
-            transform: translateY(-2px);
-            transition: transform .3s ease-in-out;
+            opacity: 0.8;
+            transition: opacity 0.3s ease-in-out;
           }
           .button:active {
-            transform: translateY(2px);
-            transition: transform .1s;
             box-shadow: none;
+            transform: translate(-3px, 3px);
+            transition: transform 0.1s;
           }
         }
       }
