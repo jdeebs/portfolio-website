@@ -30,6 +30,10 @@
   }
 }
 
+*, html {
+  scroll-behavior: smooth !important;
+}
+
 body {
   background-color: var(--background);
   color: var(--text-color);
