@@ -182,6 +182,7 @@ header {
   }
 
   h3 {
+    color: var(--highlight);
     font-weight: 300;
     margin-bottom: var(--spacing-lg);
   }
@@ -518,5 +519,9 @@ section {
 .contact {
   h3 {
     margin-bottom: var(--spacing-lg);
+
+    a {
+      color: var(--highlight);
+    }
   }
 }
