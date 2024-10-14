@@ -59,8 +59,11 @@ header {
     align-items: center;
 
     .top {
+      font-family: "Playfair Display", sans-serif;
       width: 40px;
       height: 40px;
+      color: var(--text-color);
+      font-weight: 500;
       border: none;
       background-color: var(--secondary);
       border-radius: 4px;
@@ -82,7 +85,7 @@ header {
         display: flex;
         gap: var(--spacing-md);
         list-style-type: none;
-        text-transform: uppercase;
+        // text-transform: uppercase;
         font-size: 24px;
         font-weight: 300;
 
@@ -92,18 +95,20 @@ header {
         }
 
         span {
+          font-family: "Playfair Display", sans-serif;
           background-color: var(--secondary);
           border-radius: 4px;
-          box-shadow: 0px 4px 1px rgb(29, 39, 49, 1);
+          box-shadow: -3px 4px 0 var(--background),
+            0 6px 15px rgba(0, 0, 0, 0.2);
           padding-left: 0.5rem;
           padding-right: 0.5rem;
-          transition: transform 0.4s ease-out;
+          transition: transform 1s ease-in;
         }
         span:active {
           display: flex;
-          transform: translateY(2px);
-          transition: transform 0.1s ease-in-out;
           box-shadow: none;
+          transform: translate(-3px, 3px);
+          transition: transform 0.1s ease-out;
         }
       }
 
