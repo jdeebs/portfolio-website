@@ -96,19 +96,11 @@ header {
 
         span {
           font-family: "Playfair Display", sans-serif;
-          background-color: var(--secondary);
-          border-radius: 4px;
-          box-shadow: -3px 4px 0 var(--background),
-            0 6px 15px rgba(0, 0, 0, 0.2);
           padding-left: 0.5rem;
           padding-right: 0.5rem;
-          transition: transform 1s ease-in;
         }
         span:active {
-          display: flex;
-          box-shadow: none;
-          transform: translate(-3px, 3px);
-          transition: transform 0.1s ease-out;
+          color: var(--highlight);
         }
       }
 
