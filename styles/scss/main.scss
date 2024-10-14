@@ -177,7 +177,9 @@ header {
   }
 
   h1 {
-    font-weight: 300;
+    font-family: "Playfair Display", sans-serif;
+    // text-transform: uppercase;
+    // font-size: 2rem;
     margin: 0;
   }
 
@@ -185,6 +187,15 @@ header {
     color: var(--highlight);
     font-weight: 300;
     margin-bottom: var(--spacing-lg);
+  }
+  // Underline below project title
+  h3:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 10%;
+    padding-top: var(--spacing-xs);
+    border-bottom: 2px solid var(--highlight);
   }
 
   p {
