@@ -617,11 +617,27 @@ section {
     opacity: 0.5;
   }
 
+  h3 {
+    color: var(--highlight);
+    font-weight: 300;
+    margin-bottom: var(--spacing-sm);
+  }
+  // Underline below project title
+  h3:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 10%;
+    padding-top: var(--spacing-xs);
+    border-bottom: 2px solid var(--highlight);
+  }
+
   .skills-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
 
     @media (max-width: 320px) {
       gap: var(--spacing-xs);
