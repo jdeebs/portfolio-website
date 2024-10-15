@@ -623,10 +623,14 @@ section {
     flex-wrap: wrap;
     gap: var(--spacing-md);
 
+    @media (max-width: 320px) {
+      gap: var(--spacing-xs);
+    }
+
     .skill {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: center;
       font-weight: 500;
       width: 150px;
       min-width: 150px;
