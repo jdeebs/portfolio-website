@@ -637,7 +637,7 @@ section {
     justify-content: center;
     flex-wrap: wrap;
     gap: var(--spacing-md);
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-xl);
 
     @media (max-width: 320px) {
       gap: var(--spacing-xs);
