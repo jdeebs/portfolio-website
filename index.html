@@ -20,34 +20,34 @@
 <body>
   <header>
     <div class="container">
-      <nav>
+      <nav aria-label="Main Navigation">
         <a href="#">
-          <button class="top" alt="Up arrow button">⬆️</button>
+          <button class="top" aria-label="Scroll to top button" alt="Up arrow button">⬆️</button>
         </a>
 
         <!-- Hamburger menu -->
-        <label for="menu" tabindex="0">
-          <img src="assets/icons/hamburger_icon.svg" width="40" height="40" />
+        <label for="menu" tabindex="0" aria-label="Open Hamburger Menu">
+          <img src="assets/icons/hamburger_icon.svg" alt="Hamburger menu icon" width="40" height="40" />
         </label>
         <input id="menu" type="checkbox" />
 
         <!-- Collapsable menu -->
         <ul>
           <li>
-            <a href="#projects"><img src="assets/icons/triangle_icon.svg" width="30"
+            <a href="#projects"><img src="assets/icons/triangle_icon.svg" alt="Triangle icon facing up" width="30"
                 height="30"><span>Projects</span></a>
           </li>
           <li>
-            <a href="#experience"><img src="assets/icons/triangle_icon.svg" width="30" height="30"
-                style="transform: rotate(180deg);"><span>Experience</span></a>
+            <a href="#experience"><img src="assets/icons/triangle_icon.svg" alt="Triangle icon facing down" width="30"
+                height="30" style="transform: rotate(180deg);"><span>Experience</span></a>
           </li>
           <li>
-            <a href="#skills"><img src="assets/icons/triangle_icon.svg" width="30" height="30"
-                style="transform: rotate(-90deg);"><span>Skills</span></a>
+            <a href="#skills"><img src="assets/icons/triangle_icon.svg" alt="Triangle icon facing left" width="30"
+                height="30" style="transform: rotate(-90deg);"><span>Skills</span></a>
           </li>
           <li>
-            <a href="#contact"><img src="assets/icons/triangle_icon.svg" width="30" height="30"
-                style="transform: rotate(90deg);"><span>Contact</span></a>
+            <a href="#contact"><img src="assets/icons/triangle_icon.svg" alt="Triangle icon facing right" width="30"
+                height="30" style="transform: rotate(90deg);"><span>Contact</span></a>
           </li>
         </ul>
       </nav>
@@ -57,7 +57,7 @@
   <main>
     <section class="landing">
       <div class="container">
-        <img src="assets/images/profilepicture-1.jpg" class="profile-picture" />
+        <img src="assets/images/profilepicture-1.jpg" alt="Jacob DiBiase profile picture" class="profile-picture" />
         <h1>Jacob DiBiase</h1>
         <h3>Full Stack Developer</h3>
         <p>
@@ -67,20 +67,20 @@
           efficient code.
         </p>
         <div class="socials">
-          <a href="https://github.com/jdeebs" target="_blank">
-            <img src="assets/icons/211904_social_github_icon.svg" />
+          <a href="https://github.com/jdeebs" target="_blank" aria-label="GitHub profile">
+            <img src="assets/icons/211904_social_github_icon.svg" alt="GitHub icon" />
           </a>
-          <a href="https://join.skype.com/invite/fchfvUg5hnXf" target="_blank">
-            <img src="assets/icons/104495_skype_icon.svg" />
+          <a href="https://join.skype.com/invite/fchfvUg5hnXf" target="_blank" aria-label="Skype profile">
+            <img src="assets/icons/104495_skype_icon.svg" alt="Skype icon" />
           </a>
-          <a href="https://www.linkedin.com/in/jacob-dibiase-2b87882b8" target="_blank">
-            <img src="assets/icons/104493_linkedin_icon.svg" />
+          <a href="https://www.linkedin.com/in/jacob-dibiase-2b87882b8" target="_blank" aria-label="LinkedIn profile">
+            <img src="assets/icons/104493_linkedin_icon.svg" alt="LinkedIn icon" />
           </a>
-          <a href="https://medium.com/@jdibiase93" target="_blank">
-            <img src="assets/icons/medium_icon.svg" />
+          <a href="https://medium.com/@jdibiase93" target="_blank" aria-label="Medium profile">
+            <img src="assets/icons/medium_icon.svg" alt="Medium icon" />
           </a>
-          <a href="https://x.com/jdeebsdev" target="_blank">
-            <img src="assets/icons/11053969_x_logo_twitter_icon.svg" />
+          <a href="https://x.com/jdeebsdev" target="_blank" aria-label="X/Twitter profile">
+            <img src="assets/icons/11053969_x_logo_twitter_icon.svg" alt="X/Twitter icon" />
           </a>
         </div>
       </div>
@@ -90,14 +90,14 @@
       <div class="container">
         <div class="projects-header">
           <h2>PROJECTS</h2>
-          <img src="assets/icons/triangle_icon.svg" class="triangle-icon">
+          <img src="assets/icons/triangle_icon.svg" class="triangle-icon" alt="Decorative triangle icon">
         </div>
 
         <div class="scroll-container">
-          <img src="assets/images/pokedex-app.png">
-          <img src="assets/images/moviemax-react-app.png">
-          <img src="assets/images/meet-app.png">
-          <img src="assets/images/moviemax-angular-app.png">
+          <img src="assets/images/pokedex-app.png" alt="Pokedex app screenshot">
+          <img src="assets/images/moviemax-react-app.png" alt="MovieMax react app screenshot">
+          <img src="assets/images/meet-app.png" alt="Meet app screenshot">
+          <img src="assets/images/moviemax-angular-app.png" alt="MovieMax angular app screenshot">
         </div>
 
         <div class="projects-grid">
@@ -110,12 +110,12 @@
               </p>
               <h5>Built with</h5>
               <div class="tech-icons">
-                <img src="assets/icons/html5.svg" />
-                <img src="assets/icons/css3.svg" />
+                <img src="assets/icons/html5.svg" alt="html5 icon" />
+                <img src="assets/icons/css3.svg" alt="css3 icon" />
               </div>
               <div class="project-buttons">
-                <a href="https://github.com/jdeebs/portfolio-website" class="button" target="_blank">GitHub Repo</a>
-                <a href="https://jdeebs.github.io/portfolio-website/" class="button" target="_blank">Live Demo</a>
+                <a href="https://github.com/jdeebs/portfolio-website" class="button" target="_blank"
+                  aria-label="GitHub Repository for the Portfolio Website (opens in new tab)">GitHub Repo</a>
               </div>
             </div>
           </div>
@@ -129,13 +129,15 @@
               </p>
               <h5>Built with</h5>
               <div class="tech-icons">
-                <img src="assets/icons/javascript.svg" />
-                <img src="assets/icons/bootstrap.svg" />
-                <img src="assets/icons/jquery.svg" />
+                <img src="assets/icons/javascript.svg" alt="Javascript icon" />
+                <img src="assets/icons/bootstrap.svg" alt="Bootstrap icon" />
+                <img src="assets/icons/jquery.svg" alt="Jquery icon" />
               </div>
               <div class="project-buttons">
-                <a href="https://github.com/jdeebs/pokedex-app" class="button" target="_blank">GitHub Repo</a>
-                <a href="https://jdeebs.github.io/pokedex-app" class="button" target="_blank">Live Demo</a>
+                <a href="https://github.com/jdeebs/pokedex-app" class="button" target="_blank"
+                  aria-label="GitHub Repository for the Pokedex App (opens in new tab)">GitHub Repo</a>
+                <a href="https://jdeebs.github.io/pokedex-app" class="button" target="_blank"
+                  aria-label="Live Demo of the Pokedex App (opens in new tab)">Live Demo</a>
               </div>
             </div>
           </div>
@@ -144,20 +146,22 @@
             <div class="content">
               <h3>MovieMax App & Database</h3>
               <p>
-                A single-page application built using React, connected with an
-                existing server-side REST API and MongoDB database I created.
+                A single-page application built using React, connected with an existing server-side REST API and MongoDB
+                database I created.
               </p>
               <h5>Built with</h5>
               <div class="tech-icons">
-                <img src="assets/icons/react.svg" />
-                <img src="assets/icons/bootstrap.svg" />
-                <img src="assets/icons/mongodb.svg" />
+                <img src="assets/icons/react.svg" alt="React logo" />
+                <img src="assets/icons/bootstrap.svg" alt="Bootstrap logo" />
+                <img src="assets/icons/mongodb.svg" alt="MongoDB logo" />
               </div>
               <div class="project-buttons">
-                <a href="https://github.com/jdeebs/moviemax-client" class="button" target="_blank">Frontend GitHub
-                  Repo</a>
-                <a href="https://github.com/jdeebs/moviemax" class="button" target="_blank">Backend GitHub Repo</a>
-                <a href="https://jdeebs-moviemax.netlify.app" class="button" target="_blank">Live Demo</a>
+                <a href="https://github.com/jdeebs/moviemax-client" class="button" target="_blank"
+                  aria-label="MovieMax frontend GitHub repository">Frontend GitHub Repo</a>
+                <a href="https://github.com/jdeebs/moviemax" class="button" target="_blank"
+                  aria-label="MovieMax backend GitHub repository">Backend GitHub Repo</a>
+                <a href="https://jdeebs-moviemax.netlify.app" class="button" target="_blank"
+                  aria-label="Live demo of the MovieMax app">Live Demo</a>
               </div>
             </div>
           </div>
@@ -166,19 +170,20 @@
             <div class="content">
               <h3>Meet App</h3>
               <p>
-                A serverless PWA, built with React using a test-driven
-                development technique. Displays event details from a Google
-                Calendar API and visualized event data through charts.
+                A serverless PWA, built with React using a test-driven development technique. Displays event details
+                from a Google Calendar API and visualized event data through charts.
               </p>
               <h5>Built with</h5>
               <div class="tech-icons">
-                <img src="assets/icons/react.svg" />
-                <img src="assets/icons/jest.svg" />
-                <img src="assets/icons/aws-lambda.svg" />
+                <img src="assets/icons/react.svg" alt="React logo" />
+                <img src="assets/icons/jest.svg" alt="Jest logo" />
+                <img src="assets/icons/aws-lambda.svg" alt="AWS Lambda logo" />
               </div>
               <div class="project-buttons">
-                <a href="https://github.com/jdeebs/meet" class="button" target="_blank">GitHub Repo</a>
-                <a href="https://jdeebs.github.io/meet/" class="button" target="_blank">Live Demo</a>
+                <a href="https://github.com/jdeebs/meet" class="button" target="_blank"
+                  aria-label="Meet app GitHub repository">GitHub Repo</a>
+                <a href="https://jdeebs.github.io/meet/" class="button" target="_blank"
+                  aria-label="Live demo of the Meet app">Live Demo</a>
               </div>
             </div>
           </div>
@@ -187,19 +192,20 @@
             <div class="content">
               <h3>Chat App</h3>
               <p>
-                A mobile chat application built with React Native, which
-                allows users to engage in conversations, share images, and
-                share location.
+                A mobile chat application built with React Native, which allows users to engage in conversations, share
+                images, and share location.
               </p>
               <h5>Built with</h5>
               <div class="tech-icons">
-                <img src="assets/icons/react.svg" />
-                <img src="assets/icons/expo.svg" />
-                <img src="assets/icons/firebase.svg" />
+                <img src="assets/icons/react.svg" alt="React Native logo" />
+                <img src="assets/icons/expo.svg" alt="Expo logo" />
+                <img src="assets/icons/firebase.svg" alt="Firebase logo" />
               </div>
               <div class="project-buttons">
-                <a href="https://github.com/jdeebs/chat-app" class="button" target="_blank">GitHub Repo</a>
-                <a href="https://vimeo.com/1018799421" class="button" target="_blank">Video Demo</a>
+                <a href="https://github.com/jdeebs/chat-app" class="button" target="_blank"
+                  aria-label="Chat App GitHub repository">GitHub Repo</a>
+                <a href="https://vimeo.com/1018799421" class="button" target="_blank"
+                  aria-label="Video demo of the Chat app">Video Demo</a>
               </div>
             </div>
           </div>
@@ -208,21 +214,20 @@
             <div class="content">
               <h3>MovieMax Angular App</h3>
               <p>
-                A single-page application built using Angular, which allows
-                users to browse and access movie information. This app
-                interfaces with the same existing API and database used in the
-                React app.
+                A single-page application built using Angular, which allows users to browse and access movie
+                information. This app interfaces with the same existing API and database used in the React app.
               </p>
               <h5>Built with</h5>
               <div class="tech-icons">
-                <img src="assets/icons/angular.svg" />
-                <img src="assets/icons/angular-material.svg" />
-                <img src="assets/icons/typeccript.svg" />
+                <img src="assets/icons/angular.svg" alt="Angular logo" />
+                <img src="assets/icons/angular-material.svg" alt="Angular Material logo" />
+                <img src="assets/icons/typescript.svg" alt="TypeScript logo" />
               </div>
               <div class="project-buttons">
-                <a href="https://github.com/jdeebs/moviemax-angular-client" class="button" target="_blank">GitHub
-                  Repo</a>
-                <a href="https://jdeebs.github.io/moviemax-angular-client" class="button" target="_blank">Live Demo</a>
+                <a href="https://github.com/jdeebs/moviemax-angular-client" class="button" target="_blank"
+                  aria-label="MovieMax Angular GitHub repository">GitHub Repo</a>
+                <a href="https://jdeebs.github.io/moviemax-angular-client" class="button" target="_blank"
+                  aria-label="Live demo of the MovieMax Angular app">Live Demo</a>
               </div>
             </div>
           </div>
@@ -234,13 +239,13 @@
       <div class="container">
         <div class="experience-header">
           <h2>EXPERIENCE</h2>
-          <img src="assets/icons/triangle_icon.svg" class="triangle-icon">
+          <img src="assets/icons/triangle_icon.svg" class="triangle-icon" alt="Decorative triangle icon" />
         </div>
 
         <div class="experience-grid">
           <div class="experience-item">
             <div class="experience-company">
-              <img src="assets/icons/cf_logo.svg" />
+              <img src="assets/icons/cf_logo.svg" alt="CareerFoundry logo" />
               <h3>Career<span>Foundry</span></h3>
             </div>
             <div class="experience-position">
@@ -253,7 +258,7 @@
 
           <div class="experience-item">
             <div class="experience-company">
-              <img src="assets/icons/Sprouts-Farmers-Market-Emblem.png" />
+              <img src="assets/icons/Sprouts-Farmers-Market-Emblem.png" alt="Sprouts Farmers Market logo" />
               <h3>Sprouts Farmers Market</h3>
             </div>
             <div class="experience-position">
@@ -268,7 +273,7 @@
 
           <div class="experience-item">
             <div class="experience-company">
-              <img src="assets/icons/frys_logo.svg" />
+              <img src="assets/icons/frys_logo.svg" alt="Fry's Food & Drug logo" />
               <h3>Fry's Food &amp; Drug</h3>
             </div>
             <div class="experience-position">
@@ -288,140 +293,122 @@
       <div class="container">
         <div class="skills-header">
           <h2>SKILLS</h2>
-          <img src="assets/icons/triangle_icon.svg" class="triangle-icon">
+          <img src="assets/icons/triangle_icon.svg" class="triangle-icon" alt="Decorative triangle icon" />
         </div>
-        <!-- Update proficiency progress bar percentage in increments of 10 using classes p10+ -->
 
         <!-- Frontend Skills -->
         <h3>Frontend</h3>
         <div class="skills-container">
           <div class="skill">
             <div class="skill-title">HTML</div>
-            <div class="progress-bar p90"></div>
+            <div class="progress-bar p90" aria-label="HTML skill level: 90%"></div>
           </div>
           <div class="skill">
             <div class="skill-title">CSS/SASS</div>
-            <div class="progress-bar p90"></div>
+            <div class="progress-bar p90" aria-label="CSS/SASS skill level: 90%"></div>
           </div>
           <div class="skill">
             <div class="skill-title">Bootstrap</div>
-            <div class="progress-bar p70"></div>
+            <div class="progress-bar p70" aria-label="Bootstrap skill level: 70%"></div>
           </div>
           <div class="skill">
             <div class="skill-title">JavaScript</div>
-            <div class="progress-bar p70"></div>
+            <div class="progress-bar p70" aria-label="JavaScript skill level: 70%"></div>
           </div>
           <div class="skill">
             <div class="skill-title">React</div>
-            <div class="progress-bar p70"></div>
+            <div class="progress-bar p70" aria-label="React skill level: 70%"></div>
           </div>
           <div class="skill">
             <div class="skill-title">Angular</div>
-            <div class="progress-bar p50"></div>
+            <div class="progress-bar p50" aria-label="Angular skill level: 50%"></div>
           </div>
         </div>
 
-          <!-- Backend Skills -->
-           <h3>Backend</h3>
-          <div class="skills-container">
+        <!-- Backend Skills -->
+        <h3>Backend</h3>
+        <div class="skills-container">
           <div class="skill">
             <div class="skill-title">Node</div>
-            <div class="progress-bar p80"></div>
+            <div class="progress-bar p80" aria-label="Node skill level: 80%"></div>
           </div>
           <div class="skill">
             <div class="skill-title">Express</div>
-            <div class="progress-bar p70"></div>
+            <div class="progress-bar p70" aria-label="Express skill level: 70%"></div>
           </div>
           <div class="skill">
             <div class="skill-title">PostgreSQL</div>
-            <div class="progress-bar p50"></div>
+            <div class="progress-bar p50" aria-label="PostgreSQL skill level: 50%"></div>
           </div>
           <div class="skill">
             <div class="skill-title">MongoDB</div>
-            <div class="progress-bar p80"></div>
+            <div class="progress-bar p80" aria-label="MongoDB skill level: 80%"></div>
           </div>
           <div class="skill">
             <div class="skill-title">Firebase</div>
-            <div class="progress-bar p60"></div>
+            <div class="progress-bar p60" aria-label="Firebase skill level: 60%"></div>
           </div>
           <div class="skill">
             <div class="skill-title">Google Cloud</div>
-            <div class="progress-bar p70"></div>
+            <div class="progress-bar p70" aria-label="Google Cloud skill level: 70%"></div>
           </div>
           <div class="skill">
             <div class="skill-title">Mongoose</div>
-            <div class="progress-bar p50"></div>
+            <div class="progress-bar p50" aria-label="Mongoose skill level: 50%"></div>
           </div>
-          </div>
+        </div>
 
-          <!-- Version Control -->
-           <h3>Version Control</h3>
-          <div class="skills-container">
+        <!-- Version Control -->
+        <h3>Version Control</h3>
+        <div class="skills-container">
           <div class="skill">
             <div class="skill-title">Git/GitHub</div>
-            <div class="progress-bar p90"></div>
+            <div class="progress-bar p90" aria-label="Git/GitHub skill level: 90%"></div>
           </div>
-          </div>
+        </div>
 
-          <!-- Deployment/Hosting -->
-           <h3>Deployment/Hosting</h3>
-           <div class="skills-container">
+        <!-- Deployment/Hosting -->
+        <h3>Deployment/Hosting</h3>
+        <div class="skills-container">
           <div class="skill">
             <div class="skill-title">Netlify</div>
-            <div class="progress-bar p60"></div>
+            <div class="progress-bar p60" aria-label="Netlify skill level: 60%"></div>
           </div>
           <div class="skill">
             <div class="skill-title">Heroku</div>
-            <div class="progress-bar p60"></div>
+            <div class="progress-bar p60" aria-label="Heroku skill level: 60%"></div>
           </div>
           <div class="skill">
             <div class="skill-title">AWS</div>
-            <div class="progress-bar p40"></div>
+            <div class="progress-bar p40" aria-label="AWS skill level: 40%"></div>
           </div>
-           </div>
+        </div>
 
-          <!-- Testing -->
-           <h3>Testing</h3>
-           <div class="skills-container">
+        <!-- Testing -->
+        <h3>Testing</h3>
+        <div class="skills-container">
           <div class="skill">
             <div class="skill-title">Jest</div>
-            <div class="progress-bar p70"></div>
+            <div class="progress-bar p70" aria-label="Jest skill level: 70%"></div>
           </div>
           <div class="skill">
             <div class="skill-title">Puppeteer</div>
-            <div class="progress-bar p70"></div>
+            <div class="progress-bar p70" aria-label="Puppeteer skill level: 70%"></div>
           </div>
-           </div>
+        </div>
 
-          <!-- Soft Skills -->
-           <h3>Soft Skills</h3>
-          <div class="skills-container">
-          <div class="skill">
-            Lifelong Learning
-          </div>
-          <div class="skill">
-            Dependability
-          </div>
-          <div class="skill">
-            Emotional Intelligence
-          </div>
-          <div class="skill">
-            Time<br>Management
-          </div>
-          <div class="skill">
-            Resilience
-          </div>
-          <div class="skill">
-            Adaptability
-          </div>
-          <div class="skill">
-            Communication
-          </div>
-          <div class="skill">
-            Leadership
-          </div>
-          </div>
-        
+        <!-- Soft Skills -->
+        <h3>Soft Skills</h3>
+        <div class="skills-container">
+          <div class="skill">Lifelong Learning</div>
+          <div class="skill">Dependability</div>
+          <div class="skill">Emotional Intelligence</div>
+          <div class="skill">Time<br>Management</div>
+          <div class="skill">Resilience</div>
+          <div class="skill">Adaptability</div>
+          <div class="skill">Communication</div>
+          <div class="skill">Leadership</div>
+        </div>
       </div>
     </section>
 
@@ -432,24 +419,24 @@
           <img src="assets/icons/triangle_icon.svg" class="triangle-icon">
         </div>
         <h3>
-          <a href="mailto:jdibiase93@gmail.com">jdibiase93@gmail.com</a>
+          <a href="mailto:jdibiase93@gmail.com" aria-label="Jacob DiBiase personal email">jdibiase93@gmail.com</a>
         </h3>
 
         <div class="socials">
-          <a href="https://github.com/jdeebs" target="_blank">
-            <img src="assets/icons/211904_social_github_icon.svg" />
+          <a href="https://github.com/jdeebs" target="_blank" aria-label="GitHub profile">
+            <img src="assets/icons/211904_social_github_icon.svg" alt="GitHub icon" />
           </a>
-          <a href="https://join.skype.com/invite/fchfvUg5hnXf" target="_blank">
-            <img src="assets/icons/104495_skype_icon.svg" />
+          <a href="https://join.skype.com/invite/fchfvUg5hnXf" target="_blank" aria-label="Skype profile">
+            <img src="assets/icons/104495_skype_icon.svg" alt="Skype icon" />
           </a>
-          <a href="https://www.linkedin.com/in/jacob-dibiase-2b87882b8" target="_blank">
-            <img src="assets/icons/104493_linkedin_icon.svg" />
+          <a href="https://www.linkedin.com/in/jacob-dibiase-2b87882b8" target="_blank" aria-label="LinkedIn profile">
+            <img src="assets/icons/104493_linkedin_icon.svg" alt="LinkedIn icon" />
           </a>
-          <a href="https://medium.com/@jdibiase93" target="_blank">
-            <img src="assets/icons/medium_icon.svg" />
+          <a href="https://medium.com/@jdibiase93" target="_blank" aria-label="Medium profile">
+            <img src="assets/icons/medium_icon.svg" alt="Medium icon" />
           </a>
-          <a href="https://x.com/jdeebsdev" target="_blank">
-            <img src="assets/icons/11053969_x_logo_twitter_icon.svg" />
+          <a href="https://x.com/jdeebsdev" target="_blank" aria-label="X/Twitter profile">
+            <img src="assets/icons/11053969_x_logo_twitter_icon.svg" alt="X/Twitter icon" />
           </a>
         </div>
       </div>
