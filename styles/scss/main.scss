@@ -412,6 +412,7 @@ section {
 
           @media (max-width: 767px) {
             gap: var(--spacing-sm);
+            width: 100%;
           }
           @media (max-width: 320px) {
             gap: var(--spacing-xs);
