@@ -39,6 +39,8 @@ body {
   background-color: var(--background);
   color: var(--text-color);
   text-align: center;
+  // Keep page from breaking on very small screens
+  min-width: 300px;
 }
 
 header {
