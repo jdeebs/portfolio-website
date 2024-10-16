@@ -325,6 +325,7 @@ section {
       border-radius: 4px;
       padding: var(--spacing-sm);
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      transition: transform 2s ease, box-shadow 1s ease;
 
       @media (max-width: 480px) {
         padding-left: var(--spacing-xs);
@@ -447,6 +448,11 @@ section {
         }
       }
     }
+    .project:hover,
+    .project:focus {
+      box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.4);
+      transform: translateY(-3px);
+    }
   }
 }
 
@@ -515,6 +521,7 @@ section {
         border-radius: 4px;
         padding: var(--spacing-md);
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        transition: transform 2s ease, box-shadow 1s ease;
 
         @media (max-width: 320px) {
           max-width: 90vw;
@@ -527,6 +534,11 @@ section {
           height: 35px;
           margin-bottom: var(--spacing-xs);
         }
+      }
+      .experience-company:hover,
+      .experience-company:focus {
+        box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.4);
+        transform: translateY(-3px);
       }
 
       .experience-position {
@@ -638,10 +650,11 @@ section {
       width: 150px;
       min-width: 150px;
       height: 50px;
-      
+
       background-color: var(--primary);
       border-radius: 4px;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      transition: transform 2s ease, box-shadow 1s ease;
 
       @media (max-width: 320px) {
         max-width: 90vw;
@@ -655,6 +668,12 @@ section {
         margin-top: auto;
       }
     }
+    .skill:hover,
+    .skill:focus {
+      box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.4);
+      transform: translateY(-3px);
+    }
+
     // Skills progress bar
     .progress-bar {
       display: flex;
@@ -662,7 +681,7 @@ section {
       padding: var(--spacing-xs);
       border-bottom: 8px solid var(--highlight);
       border-radius: 0 0 4px 4px;
-      opacity: .9;
+      opacity: 0.9;
     }
     .p10 {
       width: 10%;
