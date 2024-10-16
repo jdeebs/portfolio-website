@@ -89,8 +89,7 @@ header {
         font-weight: 300;
 
         @media (max-width: 750px) {
-          gap: 0;
-          font-size: 20px;
+          gap: var(--spacing-xs);
         }
 
         a {
