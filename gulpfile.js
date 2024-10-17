@@ -3,6 +3,9 @@
  * Autoprefixer integration.
  * Watch SCSS file(s) for changes and automatically
  * recompile them with browser compatibility fixes.
+ * 
+ * run command "npx gulp"
+ * to start watching and compile automatically
  */
 
 const gulp = require("gulp");
@@ -25,3 +28,6 @@ gulp.task("sass", function () {
 gulp.task("watch", function () {
   gulp.watch("styles/**/*.scss", gulp.series("sass")); // Watch SCSS changes
 });
+
+// Default task to run both compilation and watching
+gulp.task("default", gulp.series("sass", "watch"));
