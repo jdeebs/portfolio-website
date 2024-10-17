@@ -24,19 +24,21 @@
 
   font-family: "Work Sans", sans-serif;
 
+  // Remove default styling on all links
   a {
     text-decoration: none;
-    color: #fff;
+    color: #fff; // White text for all links
   }
 }
 
 *,
 html {
+  // Smooth scrolling for the entire document
   scroll-behavior: smooth !important;
 }
 
 body {
-  background-color: var(--background);
+  background-color: var(--background); 
   color: var(--text-color);
   text-align: center;
   // Keep page from breaking on very small screens
@@ -45,10 +47,12 @@ body {
 
 header {
   color: var(--background);
+  // Fix header at the top of the page
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  // Ensure header appears on top
   z-index: 99;
   // Transparent nav bar
   background-color: rgba(29, 39, 49, 0.7);
@@ -72,6 +76,7 @@ header {
       box-shadow: -4px 6px 0 var(--background), 0 6px 15px rgba(0, 0, 0, 0.2);
       transition: transform 0.4s ease-out;
     }
+    // Key down animation
     .top:active {
       box-shadow: none;
       transform: translate(-3px, 3px);
@@ -171,6 +176,7 @@ header {
 
           li a {
             padding-top: var(--spacing-sm);
+            // Adds a border between nav items
             border-top: 1px solid var(--highlight);
           }
         }
@@ -179,6 +185,7 @@ header {
   }
 }
 
+// Landing page section styles
 .landing {
   .profile-picture {
     margin-bottom: var(--spacing-lg);
@@ -201,7 +208,7 @@ header {
     font-weight: 300;
     margin-bottom: var(--spacing-lg);
   }
-  // Underline below project title
+  // Underline below subtitle "Full Stack Developer"
   h3:after {
     content: "";
     display: block;
@@ -218,6 +225,7 @@ header {
   }
 }
 
+// Social media icons section
 .socials {
   display: flex;
   justify-content: space-evenly;
@@ -232,12 +240,14 @@ header {
     height: 40px;
     transition: all 1s ease-in;
   }
+  // Enlarges icons on hover
   img:hover {
     transform: scale(1.3);
     transition: transform 0.1s ease-in-out;
   }
 }
 
+// Container for all sections with responsive padding
 .container {
   width: 100%;
   max-width: 1600px;
@@ -259,7 +269,9 @@ header {
   }
 }
 
+// Section for each part of the website
 section {
+  // Add vertical spacing
   padding-top: var(--spacing-xl);
   padding-bottom: var(--spacing-xl);
 
