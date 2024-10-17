@@ -76,7 +76,7 @@ header {
       box-shadow: -4px 6px 0 var(--background), 0 6px 15px rgba(0, 0, 0, 0.2);
       transition: transform 0.4s ease-out;
     }
-    // Key down animation
+    // Keydown animation on click
     .top:active {
       box-shadow: none;
       transform: translate(-3px, 3px);
@@ -294,7 +294,9 @@ section {
   }
 }
 
+// Section for each project
 .projects {
+  // Align header with decorative triangle
   .projects-header {
     position: relative;
     display: inline-block;
@@ -315,12 +317,14 @@ section {
     }
   }
 
+  // Project grid layout
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: var(--spacing-xl);
     margin-bottom: var(--spacing-lg);
 
+    // Responsive breakpoints for grid
     @media (max-width: 943px) {
       grid-template-columns: repeat(1, 1fr);
       grid-gap: var(--spacing-lg);
@@ -333,6 +337,7 @@ section {
       grid-template-columns: minmax(100px, 1fr);
     }
 
+    // Individual project card properties
     .project {
       display: flex;
       background-color: var(--primary);
@@ -346,11 +351,13 @@ section {
         padding-right: var(--spacing-xs);
       }
 
+      // Project card content
       .content {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        // Project card title
         h3 {
           font-family: "Playfair Display", sans-serif;
           margin-bottom: var(--spacing-md);
@@ -374,6 +381,7 @@ section {
           font-weight: 400;
         }
 
+        // Project "Built with" tech icons
         .tech-icons {
           display: flex;
           justify-content: center;
@@ -384,6 +392,7 @@ section {
             width: 40px;
             height: 40px;
           }
+          // Shake tech icons when hovered
           img:hover {
             animation: shake 1s infinite cubic-bezier(0.36, 0.07, 0.19, 0.97)
               both;
@@ -417,6 +426,7 @@ section {
             width: 30px;
           }
         }
+        // Project button container
         .project-buttons {
           display: flex;
           justify-content: center;
@@ -432,7 +442,7 @@ section {
           @media (max-width: 320px) {
             gap: var(--spacing-xs);
           }
-
+          // Individual button properties
           .button {
             font-family: "Playfair Display", sans-serif;
             font-weight: 600;
@@ -450,10 +460,12 @@ section {
             transition: transform 0.4s ease-out;
             transition: opacity 0.4s ease-out;
           }
+          // Darken button on hover
           .button:hover {
             opacity: 0.8;
             transition: opacity 0.3s ease-in-out;
           }
+          // Keydown animation on click
           .button:active {
             box-shadow: none;
             transform: translate(-3px, 3px);
@@ -462,6 +474,7 @@ section {
         }
       }
     }
+    // Project card raised effect on hover
     .project:hover,
     .project:focus {
       box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.4);
@@ -470,7 +483,9 @@ section {
   }
 }
 
+// Experience section
 .experience {
+  // Align header with decorative triangle
   .experience-header {
     position: relative;
     display: inline-block;
@@ -492,12 +507,14 @@ section {
     }
   }
 
+  // Experience grid layout
   .experience-grid {
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: var(--spacing-sm);
 
+    // Responsive breakpoints for grid
     @media (max-width: 1300px) {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -512,6 +529,7 @@ section {
       grid-template-columns: minmax(100px, 1fr);
     }
 
+    // Individual experience item properties
     .experience-item {
       display: flex;
       flex-direction: column;
@@ -523,6 +541,7 @@ section {
         padding-right: var(--spacing-xs);
       }
 
+      // Company title card
       .experience-company {
         display: flex;
         flex-direction: column;
@@ -549,6 +568,7 @@ section {
           margin-bottom: var(--spacing-xs);
         }
       }
+      // Card raised effect when hovered
       .experience-company:hover,
       .experience-company:focus {
         box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.4);
@@ -574,7 +594,7 @@ section {
           opacity: 0.7;
         }
 
-        // Bullet points
+        // Bullet point design
         &::before {
           content: "";
           position: absolute;
@@ -587,7 +607,7 @@ section {
           background-color: var(--primary);
         }
 
-        // Vertical line
+        // Vertical line design between each position
         &::after {
           content: "";
           position: absolute;
@@ -608,7 +628,9 @@ section {
   }
 }
 
+// Skills section
 .skills {
+  // Align header with decorative triangle
   .skills-header {
     position: relative;
     display: inline-block;
@@ -630,12 +652,13 @@ section {
     opacity: 0.5;
   }
 
+  // Subheader for each skill category, Frontend etc.
   h3 {
     color: var(--highlight);
     font-weight: 300;
     margin-bottom: var(--spacing-sm);
   }
-  // Underline below project title
+  // Underline below subheader
   h3:after {
     content: "";
     display: block;
@@ -645,6 +668,7 @@ section {
     border-bottom: 2px solid var(--highlight);
   }
 
+  // Container for each skill category
   .skills-container {
     display: flex;
     justify-content: center;
@@ -656,6 +680,7 @@ section {
       gap: var(--spacing-xs);
     }
 
+    // Individual skill card
     .skill {
       display: flex;
       flex-direction: column;
@@ -676,19 +701,21 @@ section {
         padding-right: 0;
       }
 
+      // Skill card text
       .skill-title {
         display: flex;
         justify-content: center;
         margin-top: auto;
       }
     }
+    // Card raised effect on hover
     .skill:hover,
     .skill:focus {
       box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.4);
       transform: translateY(-3px);
     }
 
-    // Skills progress bar
+    // Skills progress bar inside each skill card
     .progress-bar {
       display: flex;
       width: 100%;
@@ -697,6 +724,7 @@ section {
       border-radius: 0 0 4px 4px;
       opacity: 0.9;
     }
+    // Predefined length classes for skill proficiency by increments of 10%
     .p10 {
       width: 10%;
     }
@@ -727,7 +755,9 @@ section {
   }
 }
 
+// Contact section
 .contact {
+  // Align header with decorative triangle
   .contact-header {
     position: relative;
     display: inline-block;
@@ -749,6 +779,7 @@ section {
     }
   }
 
+  // Email link properties
   h3 {
     margin-bottom: var(--spacing-lg);
 
