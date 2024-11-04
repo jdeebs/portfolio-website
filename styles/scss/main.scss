@@ -790,6 +790,7 @@ section {
 
 // Chat App Case Study
 .overview, .challenge, .objective {
+  padding-top: var(--spacing-md);
   margin: 0;
 
   h1 {
@@ -800,7 +801,7 @@ section {
     color: var(--highlight);
     font-size: 28px;
     font-weight: 300;
-    margin-bottom: var(--spacing-xs);
+    margin-bottom: var(--spacing-md);
   }
   // Underline below subtitle "Full Stack Developer"
   h3:after {
@@ -817,7 +818,7 @@ section {
   }
 }
 
-// Project grid layout
+// Case study grid layout for specific sections
 .case-study-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -840,11 +841,13 @@ section {
   // Individual project card properties
   section {
     display: flex;
+    justify-content: center;
     background-color: var(--primary);
     border-radius: 4px;
     padding: var(--spacing-sm);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     transition: transform 2s ease, box-shadow 1s ease;
+    margin-bottom: var(--spacing-lg);
 
     @media (max-width: 480px) {
       padding-left: var(--spacing-xs);
@@ -855,7 +858,6 @@ section {
     .content {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
       align-items: center;
       // Project card title
       h3 {
@@ -869,13 +871,14 @@ section {
         margin: 0 auto;
         width: 75%;
         padding-top: var(--spacing-xs);
-        border-bottom: 2px solid var(--highlight);
+        border-bottom: 2px solid white;
       }
-      p {
+      p, ul {
         margin-bottom: var(--spacing-md);
       }
-      h5 {
-        font-weight: 400;
+      ul {
+        text-align: left;
+        padding-left: var(--spacing-md);
       }
   // Project card raised effect on hover
   .project:hover,
