@@ -787,3 +787,102 @@ section {
     }
   }
 }
+
+// Chat App Case Study
+.overview, .challenge, .objective {
+  margin: 0;
+
+  h1 {
+    font-size: 40px;
+  }
+  h3 {
+    font-family: "Playfair Display", sans-serif;
+    color: var(--highlight);
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: var(--spacing-xs);
+  }
+  // Underline below subtitle "Full Stack Developer"
+  h3:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 10%;
+    padding-top: var(--spacing-xs);
+    border-bottom: 2px solid white;
+  }
+  p {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+// Project grid layout
+.case-study-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: var(--spacing-xl);
+  margin-bottom: var(--spacing-lg);
+
+  // Responsive breakpoints for grid
+  @media (max-width: 943px) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
+  }
+  @media (max-width: 480px) {
+    grid-template-columns: minmax(200px, 1fr);
+  }
+  @media (max-width: 320px) {
+    grid-template-columns: minmax(100px, 1fr);
+  }
+
+  // Individual project card properties
+  section {
+    display: flex;
+    background-color: var(--primary);
+    border-radius: 4px;
+    padding: var(--spacing-sm);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 2s ease, box-shadow 1s ease;
+
+    @media (max-width: 480px) {
+      padding-left: var(--spacing-xs);
+      padding-right: var(--spacing-xs);
+    }
+
+    // Project card content
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      // Project card title
+      h3 {
+        margin-bottom: var(--spacing-md);
+        font-size: 28px;
+      }
+      // Underline below project title
+      h3:after {
+        content: "";
+        display: block;
+        margin: 0 auto;
+        width: 75%;
+        padding-top: var(--spacing-xs);
+        border-bottom: 2px solid var(--highlight);
+      }
+      p {
+        margin-bottom: var(--spacing-md);
+      }
+      h5 {
+        font-weight: 400;
+      }
+  // Project card raised effect on hover
+  .project:hover,
+  .project:focus {
+    box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3px);
+  }
+}
+  }
+}

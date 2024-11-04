@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Theme color for browser address bar (for mobile browsers) -->
+    <meta name="theme-color" content="#0B3C5D" />
+
+    <!-- Author -->
+    <meta name="author" content="Jacob DiBiase" />
+
+    <!-- General description -->
+    <meta name="description"
+        content="Jacob DiBiase - Full Stack Developer Portfolio showcasing projects, skills, and experience." />
+
+    <!-- Robots meta tag to control search engine indexing and following links -->
+    <meta name="robots" content="index, follow" />
+
+    <!-- SEO -->
+    <meta name="keywords"
+        content="Full Stack Developer, Web Development, React, Node.js, Portfolio, JavaScript, CSS, HTML, Angular, MongoDB, PostgreSQL, Firebase, GitHub, Jacob DiBiase" />
+    <!-- Canonical URL to avoid duplicate content issues -->
+    <link rel="canonical" href="https://jdeebs.dev/" />
+
+    <!-- Open Graph meta tags for social sharing (Facebook, LinkedIn, etc.) -->
+    <meta property="og:title" content="Jacob DiBiase - Full Stack Developer" />
+    <meta property="og:description" content="A showcase of my projects, skills, and professional experience." />
+    <meta property="og:image" content="assets/images/profilepicture-1.jpg" />
+    <meta property="og:url" content="https://jdeebs.github.io/portfolio-website/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Jacob DiBiase Portfolio" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card meta tags for social sharing (Twitter) -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Jacob DiBiase - Full Stack Developer" />
+    <meta name="twitter:description" content="A showcase of my projects, skills, and professional experience." />
+    <meta name="twitter:image" content="assets/images/profilepicture-1.jpg" />
+    <meta name="twitter:site" content="@jdeebsdev" />
+
+    <!-- Title of the webpage -->
+    <title>Jacob DiBiase</title>
+
+    <!-- Favicon links for various devices and browsers -->
+    <!-- Standard Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicons/favicon.ico" />
+
+    <!-- PNG Favicon sizes -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png" />
+
+    <!-- Apple Touch Icon for iOS devices -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png" />
+
+    <!-- Android Chrome Icons -->
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicons/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/favicons/android-chrome-512x512.png" />
+
+    <!-- Web App Manifest (for Progressive Web Apps) -->
+    <link rel="manifest" href="assets/favicons/site.webmanifest" />
+
+    <!-- Preconnect to Google Fonts to speed up font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Link to main CSS file -->
+    <link rel="stylesheet" href="dist/main.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav aria-label="Main Navigation">
+                <a href="#">
+                    <button class="top" aria-label="Scroll to top button" alt="Up arrow button">
+                        ⬆️
+                    </button>
+                </a>
+
+                <!-- Hamburger menu -->
+                <label for="menu" tabindex="0" aria-label="Open Hamburger Menu">
+                    <img src="assets/icons/hamburger_icon.svg" alt="Hamburger menu icon" width="40" height="40" />
+                </label>
+                <input id="menu" type="checkbox" />
+
+                <!-- Collapsable menu -->
+                <ul>
+                    <li>
+                        <a href="index.html#projects"><span>Projects</span></a>
+                    </li>
+                    <li>
+                        <a href="index.html#experience"><span>Experience</span></a>
+                    </li>
+                    <li>
+                        <a href="index.html#skills"><span>Skills</span></a>
+                    </li>
+                    <li>
+                        <a href="index.html#contact"><span>Contact</span></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="overview">
+                <h1>Case Study: Chat App</h1>
+                <h3>Overview</h3>
+                <p>
+                    The Chat App is a mobile application that allows users to engage in real-time conversations, send
+                    image and audio messages, and share their current location. This app allowed me to explore mobile
+                    development with React Native, focusing on key features such as real-time chat, multimedia sharing,
+                    and data accessibility.
+                </p>
+            </section>
+
+            <div class="case-study-grid">
+                <section class="challenge">
+                    <div class="content">
+                        <h3>Challenge</h3>
+                        <p>
+                            To create a fully functional chat application for mobile devices, complete with user
+                            authentication, real-time data storage, and client-side data retention. This app was my
+                            fifth
+                            project in the CareerFoundry program, providing a chance to deepen my understanding of
+                            JavaScript applications and mobile app development within a compressed timeline.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="objective">
+                    <div class="content">
+                        <h3>Objective</h3>
+                        <p>
+                            To build a native mobile chat application in React Native, meeting requirements for:
+                            - Real-time messaging with a robust chat interface
+                            - User authentication and data management
+                            - Accessibility for screen readers
+                            - Offline functionality to access conversations when disconnected
+                            In addition, I was tasked with completing five learning milestones within a one-month time
+                            frame.
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
