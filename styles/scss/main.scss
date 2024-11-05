@@ -37,7 +37,7 @@ html {
 }
 
 body {
-  background-color: var(--background); 
+  background-color: var(--background);
   color: var(--text-color);
   text-align: center;
   // Keep page from breaking on very small screens
@@ -789,7 +789,11 @@ section {
 }
 
 // Chat App Case Study
-.overview, .challenge, .objective {
+.overview,
+.challenge,
+.objective,
+.role,
+.project-scale {
   padding-top: var(--spacing-md);
   margin: 0;
 
@@ -815,6 +819,22 @@ section {
   p {
     max-width: 600px;
     margin: 0 auto;
+  }
+  ul, ol {
+    list-style-position: inside;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
+    text-align: center;
+    padding-left: inherit;
+  }
+  ol > li::before {
+    content: "\A";
+    white-space: pre;
+  }
+  li::marker {
+    font-size: 20px;
+    font-weight: 500;
   }
 }
 
@@ -873,7 +893,8 @@ section {
         padding-top: var(--spacing-xs);
         border-bottom: 2px solid white;
       }
-      p, ul {
+      p,
+      ul {
         margin-bottom: var(--spacing-md);
       }
       ul {
@@ -881,12 +902,12 @@ section {
         text-align: left;
         padding-left: var(--spacing-md);
       }
-  // Project card raised effect on hover
-  .project:hover,
-  .project:focus {
-    box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.4);
-    transform: translateY(-3px);
-  }
-}
+      // Project card raised effect on hover
+      .project:hover,
+      .project:focus {
+        box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.4);
+        transform: translateY(-3px);
+      }
+    }
   }
 }
