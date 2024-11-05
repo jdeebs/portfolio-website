@@ -793,12 +793,18 @@ section {
 .challenge,
 .objective,
 .role,
-.project-scale {
+.project-scale,
+.tools-used,
+.approach {
   padding-top: var(--spacing-md);
   margin: 0;
 
   h1 {
     font-size: 40px;
+  }
+  h2 {
+    font-family: "Work Sans", sans-serif;
+    text-transform: none;
   }
   h3 {
     font-family: "Playfair Display", sans-serif;
@@ -812,7 +818,7 @@ section {
     content: "";
     display: block;
     margin: 0 auto;
-    width: 10%;
+    width: 20%;
     padding-top: var(--spacing-xs);
     border-bottom: 2px solid white;
   }
@@ -826,7 +832,7 @@ section {
     margin: 0 auto;
     line-height: 1.5;
     text-align: center;
-    padding-left: inherit;
+    padding-left: 0;
   }
   ol > li::before {
     content: "\A";
@@ -836,78 +842,64 @@ section {
     font-size: 20px;
     font-weight: 500;
   }
-}
-
-// Case study grid layout for specific sections
-.case-study-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: var(--spacing-xl);
-  margin-bottom: var(--spacing-lg);
-
-  // Responsive breakpoints for grid
-  @media (max-width: 943px) {
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: var(--spacing-lg);
-    margin-bottom: var(--spacing-md);
-  }
-  @media (max-width: 480px) {
-    grid-template-columns: minmax(200px, 1fr);
-  }
-  @media (max-width: 320px) {
-    grid-template-columns: minmax(100px, 1fr);
-  }
-
-  // Individual project card properties
-  section {
+  // Tech icons
+  .tech-icons {
     display: flex;
     justify-content: center;
-    background-color: var(--primary);
-    border-radius: 4px;
-    padding: var(--spacing-sm);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    transition: transform 2s ease, box-shadow 1s ease;
-    margin-bottom: var(--spacing-lg);
-
-    @media (max-width: 480px) {
-      padding-left: var(--spacing-xs);
-      padding-right: var(--spacing-xs);
+    padding: var(--spacing-md);
+    padding-top: var(--spacing-xs);
+    gap: var(--spacing-sm);
+    img {
+      width: 40px;
+      height: 40px;
     }
+    // Shake tech icons when hovered
+    img:hover {
+      animation: shake 1s infinite cubic-bezier(0.36, 0.07, 0.19, 0.97)
+        both;
+      transform: translate3d(0, 0, 0);
+      perspective: 1000px;
+    }
+    @keyframes shake {
+      10%,
+      90% {
+        transform: translate3d(-1px, 0, 0);
+      }
+      20%,
+      80% {
+        transform: translate3d(1px, 1px, 0);
+      }
 
-    // Project card content
-    .content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      // Project card title
-      h3 {
-        margin-bottom: var(--spacing-md);
-        font-size: 28px;
+      30%,
+      50%,
+      70% {
+        transform: translate3d(-1px, 1px, 0);
       }
-      // Underline below project title
-      h3:after {
-        content: "";
-        display: block;
-        margin: 0 auto;
-        width: 75%;
-        padding-top: var(--spacing-xs);
-        border-bottom: 2px solid white;
-      }
-      p,
-      ul {
-        margin-bottom: var(--spacing-md);
-      }
-      ul {
-        line-height: 2;
-        text-align: left;
-        padding-left: var(--spacing-md);
-      }
-      // Project card raised effect on hover
-      .project:hover,
-      .project:focus {
-        box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.4);
-        transform: translateY(-3px);
+      40%,
+      60% {
+        transform: translate3d(1px, 0, 0);
       }
     }
+  }
+  @media (max-width: 320px) {
+    gap: var(--spacing-xs);
+    img {
+      width: 30px;
+    }
+  }
+}
+
+// Tools Used section
+.tools-used {
+  // Remove bullet points from list items
+  ul {
+    list-style-type: none;
+  }
+  // Move span items to new line
+  ul > li >
+  span {
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
   }
 }
