@@ -199,8 +199,9 @@
         </section>
         <section class="approach">
             <h2>Approach</h2>
+            <h3>Planning</h3>
             <p>
-                To keep the process organized, I outlined the app's key features and wrote user stories to keep the end user in mind.
+                To keep the process organized, I outlined key features and wrote user stories to keep the end user in mind.
             </p>
             <div class="container">
             <div class="approach-item-container">
@@ -237,7 +238,36 @@
                 </ul>
             </div>
         </div>
+
+            <h3>Development</h3>
+            <div class="approach-item-container">
+            <div class="approach-item">
+                <h3>Setup</h3>
+                <p>Using Expo CLI, I initialized the React Native project and set up a virtual device to emulate the app. I then configured the emulator for testing layouts and styles using React Native's stylesheet.</p>
+            </div>
+            <div class="approach-item">
+                <h3>Chat Interface</h3>
+                <p>I integrated essential React Native components and utilized the Gifted Chat library, customizing it to be accessible and responsive. I also configured the app to detect different keyboard responses based on device types(iOS or Android).</p>
+            </div>
+            <div class="approach-item">
+                <h3>Real-Time Data Storage</h3>
+                <p>After exploring various options for real-time data solutions, I selected Cloud Firestore. To gain familiarity, I created a shopping-list app to implement Firebase for real-time data display and anonymous user authentication. I parallelled this experience to structure a database for the Chat App.</p>
+            </div>
+            <div class="approach-item">
+                <h3>Client-Side Data Storage</h3>
+                <p>To enhance offline accessibility, I implemented client-side data storage using AsyncStorage. I configured the app to detect network connectivity and conditionally render features based on connection status, allowing messages to persist offline.</p>
+            </div>
+            <div class="approach-item">
+                <h3>Device Capabilities</h3>
+                <p>Using Expo, I enabled access to the camera, microphone, and geolocation features. This allowed users to share multimedia and location data. Files were stored in Google Cloud Storage for persistence between sessions. I reviewed ethical and moral concerns surrounding privacy within the digital landscape and added prompts for consent to access.</p>
+            </div>
+            <div class="approach-item">
+                <h3>Testing</h3>
+                <p>I tested the app extensively on an emulator and with Expo Go on an iPhone 14. The final product was reviewed in two one-hour sessions with my mentor, where I received feedback on additional features and design improvements.</p>
+            </div>
         </div>
+        </div>
+        
         </section>
     </main>
 </body>

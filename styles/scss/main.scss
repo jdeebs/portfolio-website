@@ -935,7 +935,7 @@ section {
   /* Style for each approach item */
   .approach-item {
       flex: 1 1 250px; /* Each item takes equal space, minimum width 400px */
-      max-width: 400px;
+      max-width: 300px;
       background-color: var(--primary);
       border-radius: 4px;
       padding: var(--spacing-sm);
@@ -945,6 +945,9 @@ section {
       @media (max-width: 480px) {
         padding-left: var(--spacing-xs);
         padding-right: var(--spacing-xs);
+      }
+      p, li {
+        text-align: left;
       }
   }
 }
