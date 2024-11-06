@@ -115,7 +115,7 @@
         <section class="overview">
             <div class="container">
                 <h1>Case Study: Chat App</h1>
-                <h3>Overview</h3>
+                <h3>overview</h3>
                 <p>
                     The Chat App is a mobile application that allows users to engage in real-time conversations, send
                     image and audio messages, and share their current location. This app allowed me to explore mobile
@@ -127,18 +127,20 @@
 
         <section class="challenge">
             <div class="container">
-                <h3>Challenge</h3>
+                <h3>challenge</h3>
                 <p>
                     To create a fully functional chat application for mobile devices, complete with user authentication,
-                    real-time data storage, and client-side data retention. This was my fifth project in the CareerFoundry
-                    program, providing a chance to deepen understanding of JavaScript applications and mobile app development.
+                    real-time data storage, and client-side data retention. This was my fifth project in the
+                    CareerFoundry
+                    program, providing a chance to deepen understanding of JavaScript applications and mobile app
+                    development.
                 </p>
             </div>
         </section>
 
         <section class="objective">
             <div class="container">
-                <h3>Objective</h3>
+                <h3>objective</h3>
                 <p>To build a native mobile chat application in React Native, meeting requirements for:</p>
                 <ul>
                     <li>Real-time messaging with a robust chat interface</li>
@@ -151,14 +153,14 @@
 
         <section class="role">
             <div class="container">
-                <h3>Role</h3>
+                <h3>role</h3>
                 <p>Full Stack Developer, with a focus on mobile development.</p>
             </div>
         </section>
 
         <section class="project-scale">
             <div class="container">
-                <h3>Project Scale</h3>
+                <h3>project scale</h3>
                 <p>
                     Completed in 21 days on a part-time basis. Required covering two learning milestones per week,
                     which included:
@@ -175,7 +177,7 @@
 
         <section class="tools-used">
             <div class="container">
-                <h3>Tools Used</h3>
+                <h3>tools used</h3>
                 <p>
                     The Chat App was developed using the following technologies and assets:
                 </p>
@@ -199,75 +201,103 @@
         </section>
         <section class="approach">
             <h2>Approach</h2>
-            <h3>Planning</h3>
+            <h3>planning</h3>
             <p>
-                To keep the process organized, I outlined key features and wrote user stories to keep the end user in mind.
+                To keep the process organized, I outlined key features and wrote user stories to keep the end user in
+                mind.
             </p>
             <div class="container">
-            <div class="approach-item-container">
-            <div class="approach-item">
-                    <h3>Features</h3>
-                    <ul>
-                        <li><span>User Authentication:</span> Allows users to authenticate anonymously and start
-                            chatting.</li>
-                        <li><span>Chat Interface:</span> Provides a simple, accessible interface for sending
-                            messages.</li>
-                        <li><span>Image Sharing:</span> Supports sending images from the gallery or via the camera.
-                        </li>
-                        <li><span>Location Sharing:</span> Allows users to share location data in a map view.</li>
-                        <li><span>Customizable Chat Screen:</span> Users can set their name and choose a background
-                            color.</li>
-                        <li><span>Offline Functionality:</span> Access previous messages even when offline.</li>
-                        <li><span>Accessibility:</span> Designed to work with screen readers for visually impaired
-                            users.</li>
-                    </ul>
+                <div class="approach-item-container">
+                    <div class="approach-item">
+                        <h3>Features</h3>
+                        <ul>
+                            <li><span>User Authentication:</span> Allows users to authenticate anonymously and start
+                                chatting.</li>
+                            <li><span>Chat Interface:</span> Provides a simple, accessible interface for sending
+                                messages.</li>
+                            <li><span>Image Sharing:</span> Supports sending images from the gallery or via the camera.
+                            </li>
+                            <li><span>Location Sharing:</span> Allows users to share location data in a map view.</li>
+                            <li><span>Customizable Chat Screen:</span> Users can set their name and choose a background
+                                color.</li>
+                            <li><span>Offline Functionality:</span> Access previous messages even when offline.</li>
+                            <li><span>Accessibility:</span> Designed to work with screen readers for visually impaired
+                                users.</li>
+                        </ul>
+                    </div>
+
+                    <div class="approach-item">
+                        <h3>User Stories</h3>
+                        <ul>
+                            <li><span>As a user,</span> I want to easily enter a chat room to start talking with friends
+                                and family.</li>
+                            <li><span>As a user,</span> I want to send messages to stay updated with friends and family.
+                            </li>
+                            <li><span>As a user,</span> I want to send images to share my current activities.</li>
+                            <li><span>As a user,</span> I want to share my location to show where I am.</li>
+                            <li><span>As a user,</span> I want to read my messages offline for easy reference.</li>
+                            <li><span>As a visually impaired user,</span> I want the app to be screen reader-compatible
+                                for accessibility.</li>
+                        </ul>
+                    </div>
                 </div>
 
-            <div class="approach-item">
-                <h3>User Stories</h3>
-                <ul>
-                    <li><span>As a user,</span> I want to easily enter a chat room to start talking with friends
-                        and family.</li>
-                    <li><span>As a user,</span> I want to send messages to stay updated with friends and family.
-                    </li>
-                    <li><span>As a user,</span> I want to send images to share my current activities.</li>
-                    <li><span>As a user,</span> I want to share my location to show where I am.</li>
-                    <li><span>As a user,</span> I want to read my messages offline for easy reference.</li>
-                    <li><span>As a visually impaired user,</span> I want the app to be screen reader-compatible
-                        for accessibility.</li>
-                </ul>
+                <h3>development</h3>
+                <div class="approach-item-container">
+                    <div class="approach-item">
+                        <h3>Setup</h3>
+                        <p>Using Expo CLI, I initialized the React Native project and set up a virtual device to emulate
+                            the app. I then configured the emulator for testing layouts and styles using React Native's
+                            stylesheet.</p>
+                    </div>
+                    <div class="approach-item">
+                        <h3>Chat Interface</h3>
+                        <p>I integrated essential React Native components and utilized the Gifted Chat library,
+                            customizing it to be accessible and responsive. I also configured the app to detect
+                            different keyboard responses based on device types(iOS or Android).</p>
+                    </div>
+                    <div class="approach-item">
+                        <h3>Real-Time Data Storage</h3>
+                        <p>After exploring various options for real-time data solutions, I selected Cloud Firestore. To
+                            gain familiarity, I created a shopping-list app to implement Firebase for real-time data
+                            display and anonymous user authentication. I parallelled this experience to structure a
+                            database for the Chat App.</p>
+                    </div>
+                    <div class="approach-item">
+                        <h3>Client-Side Data Storage</h3>
+                        <p>To enhance offline accessibility, I implemented client-side data storage using AsyncStorage.
+                            I configured the app to detect network connectivity and conditionally render features based
+                            on connection status, allowing messages to persist offline.</p>
+                    </div>
+                    <div class="approach-item">
+                        <h3>Device Capabilities</h3>
+                        <p>Using Expo, I enabled access to the camera, microphone, and geolocation features. This
+                            allowed users to share multimedia and location data. Files were stored in Google Cloud
+                            Storage for persistence between sessions. I reviewed ethical and moral concerns surrounding
+                            privacy within the digital landscape and added prompts for consent to access.</p>
+                    </div>
+                    <div class="approach-item">
+                        <h3>Testing</h3>
+                        <p>I tested the app extensively on an emulator and with Expo Go on an iPhone 14. The final
+                            product was reviewed in two one-hour sessions with my mentor, where I received feedback on
+                            additional features and design improvements.</p>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
+        <section class="summary">
+            <h2>Summary</h2>
+            <div class="container">
+                <h3>challenges faced</h3>
+                <p>One of the most challenging aspects was implementing a redirect from shared location messages to the native maps application on users' devices. Without this redirect, location data could not be presented meaningfully within the app. By leveraging native maps on iOS and Android, I appended coordinate data to redirect links, allowing users to view shared locations in more detail.</p>
+            </div>
 
-            <h3>Development</h3>
-            <div class="approach-item-container">
-            <div class="approach-item">
-                <h3>Setup</h3>
-                <p>Using Expo CLI, I initialized the React Native project and set up a virtual device to emulate the app. I then configured the emulator for testing layouts and styles using React Native's stylesheet.</p>
+            <div class="container">
+                <h3>what was learned</h3>
+                <p>Building the Chat App allowed me to apply my knowledge of React Native and JavaScript to create a functional, real-time chat application. I gained a comprehensive understanding of mobile development and learned to evaluate optimal technologies for different use cases.</p>
+
+                <p>Overall, I achieved my original objective and am happy with the outcome. This hands-on experience has solidified my understanding of mobile app development and prepared me to take on more complex projects in the future.</p>
             </div>
-            <div class="approach-item">
-                <h3>Chat Interface</h3>
-                <p>I integrated essential React Native components and utilized the Gifted Chat library, customizing it to be accessible and responsive. I also configured the app to detect different keyboard responses based on device types(iOS or Android).</p>
-            </div>
-            <div class="approach-item">
-                <h3>Real-Time Data Storage</h3>
-                <p>After exploring various options for real-time data solutions, I selected Cloud Firestore. To gain familiarity, I created a shopping-list app to implement Firebase for real-time data display and anonymous user authentication. I parallelled this experience to structure a database for the Chat App.</p>
-            </div>
-            <div class="approach-item">
-                <h3>Client-Side Data Storage</h3>
-                <p>To enhance offline accessibility, I implemented client-side data storage using AsyncStorage. I configured the app to detect network connectivity and conditionally render features based on connection status, allowing messages to persist offline.</p>
-            </div>
-            <div class="approach-item">
-                <h3>Device Capabilities</h3>
-                <p>Using Expo, I enabled access to the camera, microphone, and geolocation features. This allowed users to share multimedia and location data. Files were stored in Google Cloud Storage for persistence between sessions. I reviewed ethical and moral concerns surrounding privacy within the digital landscape and added prompts for consent to access.</p>
-            </div>
-            <div class="approach-item">
-                <h3>Testing</h3>
-                <p>I tested the app extensively on an emulator and with Expo Go on an iPhone 14. The final product was reviewed in two one-hour sessions with my mentor, where I received feedback on additional features and design improvements.</p>
-            </div>
-        </div>
-        </div>
-        
         </section>
     </main>
 </body>

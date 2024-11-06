@@ -794,7 +794,8 @@ section {
 .role,
 .project-scale,
 .tools-used,
-.approach {
+.approach,
+.summary {
   padding-top: var(--spacing-md);
   margin: 0;
 
@@ -825,7 +826,8 @@ section {
     max-width: 600px;
     margin: 0 auto;
   }
-  ul, ol {
+  ul,
+  ol {
     list-style-position: inside;
     max-width: 600px;
     margin: 0 auto;
@@ -854,8 +856,7 @@ section {
     }
     // Shake tech icons when hovered
     img:hover {
-      animation: shake 1s infinite cubic-bezier(0.36, 0.07, 0.19, 0.97)
-        both;
+      animation: shake 1s infinite cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
       transform: translate3d(0, 0, 0);
       perspective: 1000px;
     }
@@ -889,7 +890,8 @@ section {
 }
 
 // List item styling
-.tools-used, .approach {
+.tools-used,
+.approach {
   // Remove bullet points from list items
   ul {
     list-style-type: none;
@@ -898,8 +900,7 @@ section {
     padding-top: var(--spacing-md);
   }
   // Move span items to new line
-  ul > li >
-  span {
+  ul > li > span {
     display: block;
     font-size: 18px;
     font-weight: 500;
@@ -907,7 +908,8 @@ section {
 }
 
 // Approach section
-.approach {
+.approach,
+.summary {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -934,20 +936,21 @@ section {
 
   /* Style for each approach item */
   .approach-item {
-      flex: 1 1 250px; /* Each item takes equal space, minimum width 400px */
-      max-width: 300px;
-      background-color: var(--primary);
-      border-radius: 4px;
-      padding: var(--spacing-sm);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-      transition: transform 2s ease, box-shadow 1s ease;
+    flex: 1 1 250px; /* Each item takes equal space, minimum width 400px */
+    max-width: 300px;
+    background-color: var(--primary);
+    border-radius: 4px;
+    padding: var(--spacing-sm);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 2s ease, box-shadow 1s ease;
 
-      @media (max-width: 480px) {
-        padding-left: var(--spacing-xs);
-        padding-right: var(--spacing-xs);
-      }
-      p, li {
-        text-align: left;
-      }
+    @media (max-width: 480px) {
+      padding-left: var(--spacing-xs);
+      padding-right: var(--spacing-xs);
+    }
+    p,
+    li {
+      text-align: left;
+    }
   }
 }
