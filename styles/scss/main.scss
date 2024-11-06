@@ -797,8 +797,10 @@ section {
 .approach,
 .summary {
   margin: 0;
+  padding-bottom: 0;
 
   h1 {
+    padding-top: var(--spacing-lg);
     font-size: 40px;
   }
   h2 {
@@ -905,8 +907,12 @@ section {
     font-weight: 500;
   }
 }
+.tools-used {
+  padding-bottom: var(--spacing-xl);
+}
 
 // Approach section
+.overview,
 .approach,
 .summary {
   display: flex;
@@ -915,8 +921,18 @@ section {
   text-align: center;
   padding: 0;
   h2 {
-    font-weight: 700;
+    font-size: 34px;
+    font-weight: 600;
     margin-bottom: var(--spacing-md);
+  }
+  // Underline below subtitle
+  h2:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    padding-top: var(--spacing-xs);
+    border-bottom: 2px solid white;
   }
   p {
     margin-bottom: var(--spacing-lg);
