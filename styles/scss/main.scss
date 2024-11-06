@@ -248,7 +248,6 @@ header {
 
 // Container for all sections with responsive padding
 .container {
-  width: 100%;
   max-width: 1600px;
   margin: 0 auto;
   padding-left: var(--spacing-xl);
@@ -788,7 +787,7 @@ section {
   }
 }
 
-// Chat App Case Study
+// Chat App Case Study --------------------------------------------
 .overview,
 .challenge,
 .objective,
@@ -813,7 +812,7 @@ section {
     font-weight: 300;
     margin-bottom: var(--spacing-md);
   }
-  // Underline below subtitle "Full Stack Developer"
+  // Underline below subtitle
   h3:after {
     content: "";
     display: block;
@@ -889,17 +888,63 @@ section {
   }
 }
 
-// Tools Used section
-.tools-used {
+// List item styling
+.tools-used, .approach {
   // Remove bullet points from list items
   ul {
     list-style-type: none;
+  }
+  li {
+    padding-top: var(--spacing-md);
   }
   // Move span items to new line
   ul > li >
   span {
     display: block;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
+  }
+}
+
+// Approach section
+.approach {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  h2 {
+    font-weight: 700;
+    margin-bottom: var(--spacing-md);
+  }
+  p {
+    margin-bottom: var(--spacing-lg);
+  }
+  ul {
+    list-style-type: none;
+    line-height: 1.5;
+  }
+  .approach-item-container {
+    display: flex;
+    justify-content: center; /* Center items within container */
+    gap: var(--spacing-md); /* Space between items */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    width: 100%; /* Full width for flexibility */
+    max-width: 1200px; /* Optional: limit max width for layout */
+  }
+
+  /* Style for each approach item */
+  .approach-item {
+      flex: 1 1 250px; /* Each item takes equal space, minimum width 400px */
+      max-width: 400px;
+      background-color: var(--primary);
+      border-radius: 4px;
+      padding: var(--spacing-sm);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      transition: transform 2s ease, box-shadow 1s ease;
+
+      @media (max-width: 480px) {
+        padding-left: var(--spacing-xs);
+        padding-right: var(--spacing-xs);
+      }
   }
 }
