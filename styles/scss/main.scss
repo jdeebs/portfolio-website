@@ -42,6 +42,7 @@ body {
   text-align: center;
   // Keep page from breaking on very small screens
   min-width: 300px;
+  max-width: 100%;
 }
 
 header {
@@ -889,13 +890,20 @@ section {
     }
   }
 }
+.overview {
+  @media (max-width: 500px) {
+    margin-bottom: var(--spacing-lg);
+  }
+}
 // Position hero image at top of page
 .hero-image {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  max-height: 70vh; // 70% of viewport height
+  height: 400px;
+  max-width: 100%;
+  max-height: 400px;
   object-fit: cover;
   z-index: -1; // Place image behind text
 }
@@ -1018,7 +1026,7 @@ section {
         gap: 5px;
       }
       img {
-        width: 100%;
+        width: 80px;
         height: auto;
         max-width: 80px;
         max-height: 80px;
@@ -1038,6 +1046,7 @@ section {
       flex-wrap: wrap;
       text-align: left;
       height: 200px;
+      max-width: 100%;
     }
   }
   // Overwrite development process styles for vertical alignment
@@ -1047,4 +1056,12 @@ section {
       align-content: flex-start;
     }
   }
+  // Challenges map apps on phone image
+.challenges-image {
+  width: 100%;
+  max-width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  margin-bottom: var(--spacing-lg);
+}
 }
