@@ -1031,10 +1031,17 @@ section {
     li {
       display: flex;
       align-items: flex-end;
+      align-content: center;
       gap: 5px;
       flex-wrap: wrap;
       text-align: left;
-      // height: 200px;
+      height: 200px
+    }
+  }
+  // Overwrite development process styles for vertical alignment
+  .development-process {
+    p, li {
+      align-content: flex-start;
     }
   }
 }
