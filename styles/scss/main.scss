@@ -1008,9 +1008,33 @@ section {
       padding-left: var(--spacing-xs);
       padding-right: var(--spacing-xs);
     }
+    ul {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        display: flex;
+        align-items: flex-end;
+        gap: 5px;
+      }
+      img {
+        width: 80px;
+        height: 80px;
+
+        @media (max-width: 610px) {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
     p,
     li {
+      display: flex;
+      align-items: flex-end;
+      gap: 5px;
+      flex-wrap: wrap;
       text-align: left;
+      // height: 200px;
     }
   }
 }
