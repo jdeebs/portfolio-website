@@ -910,7 +910,7 @@ section {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
   border-radius: 4px;
   padding-left: 10px;
-  padding-right: 10px
+  padding-right: 10px;
 }
 
 // Remove bullet points from list items in requirements section
@@ -1035,12 +1035,13 @@ section {
       gap: 5px;
       flex-wrap: wrap;
       text-align: left;
-      height: 200px
+      height: 200px;
     }
   }
   // Overwrite development process styles for vertical alignment
   .development-process {
-    p, li {
+    p,
+    li {
       align-content: flex-start;
     }
   }
