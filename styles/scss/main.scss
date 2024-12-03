@@ -800,6 +800,12 @@ section {
   margin: 0;
   padding-bottom: 0;
 
+  a {
+    color: var(--highlight);
+  }
+  a:hover {
+    text-decoration: underline;
+  }
   h1 {
     padding-top: var(--spacing-lg);
     font-size: 40px;
