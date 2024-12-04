@@ -1085,7 +1085,7 @@ section {
   a:hover {
     text-decoration: underline;
   }
-  
+
   img {
     width: 200px;
     border-radius: 50%;
@@ -1125,5 +1125,14 @@ section {
 }
 .about-contact {
   padding-top: 0;
+  a {
+    color: var(--highlight);
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  h3 {
+    margin-bottom: var(--spacing-md);
+  }
 }
 
