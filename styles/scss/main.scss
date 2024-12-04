@@ -1076,5 +1076,54 @@ section {
 }
 
 // About Me --------------------------------------------------
+.about {
+  padding: 0;
 
+  a {
+    color: var(--highlight);
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  img {
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  h1 {
+    font-family: "Playfair Display", sans-serif;
+    // text-transform: uppercase;
+    // font-size: 2rem;
+    margin: 0;
+  }
+
+  h3 {
+    color: var(--highlight);
+    font-weight: 300;
+    margin-bottom: var(--spacing-lg);
+  }
+  // Underline below subtitle "Full Stack Developer"
+  h3:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 10%;
+    padding-top: var(--spacing-xs);
+    border-bottom: 2px solid var(--highlight);
+  }
+
+  p {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: var(--spacing-lg);
+  }
+}
+.about-landing {
+  padding-bottom: 0;
+}
+.about-contact {
+  padding-top: 0;
+}
 
