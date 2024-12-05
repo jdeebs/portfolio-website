@@ -119,10 +119,15 @@ header {
           font-family: "Playfair Display", sans-serif;
           padding-left: 0.5rem;
           padding-right: 0.5rem;
+          transition: color .6s ease;
+
+          &:hover {
+            color: var(--highlight);
+            text-decoration: underline;
+            transition: color 0.3s ease;
+          }
         }
-        span:active {
-          color: var(--highlight);
-        }
+        
       }
 
       // Make the checkbox and label disappear on larger screens
@@ -216,7 +221,7 @@ header {
       cursor: pointer;
 
       &:hover {
-        color: var(--highlight); // Change text color on hover
+        color: var(--highlight);
         text-decoration: underline;
       }
     }
@@ -815,6 +820,11 @@ section {
 
     a {
       color: var(--highlight);
+      transition: transform 0.3s ease;
+      
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
