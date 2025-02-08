@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Theme color for browser address bar (for mobile browsers) -->
+    <meta name="theme-color" content="#0B3C5D" />
+
+    <!-- Author -->
+    <meta name="author" content="Jacob DiBiase" />
+
+    <!-- General description -->
+    <meta name="description"
+        content="Jacob DiBiase - Full Stack Developer. Explore my portfolio of innovative projects, technical proficiency, and creative problem-solving." />
+
+    <!-- Robots meta tag to control search engine indexing and following links -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+    <!-- SEO -->
+    <meta name="keywords"
+        content="Recipe App, Django, Python, Full-Stack Web Development, Case Study, Data Visualization, Heroku, PostgreSQL, Jacob DiBiase" />
+    <!-- Canonical URL to avoid duplicate content issues -->
+    <link rel="canonical" href="https://jdeebs.dev/recipe-recipe-case-study.html" />
+
+    <!-- Open Graph meta tags for social sharing (Facebook, LinkedIn, etc.) -->
+    <meta property="og:title" content="Recipe App Case Study - Jacob DiBiase" />
+    <meta property="og:description"
+        content="Explore the case study of my Recipe App development project. Learn about the challenges faced, technologies used, and solutions implemented to create a dynamic, multi-user web application for managing and searching recipes." />
+    <meta name="image" property="og:image" content="https://jdeebs.dev/assets/images/profilepicture-1.jpg" />
+    <meta property="og:url" content="https://jdeebs.dev/recipe-case-study.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Jacob DiBiase Portfolio" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card meta tags for social sharing (Twitter) -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Recipe App Case Study - Jacob DiBiase" />
+    <meta name="twitter:description"
+        content="Explore the recipe-case study of my Recipe App development project. Learn about the challenges faced, technologies used, and solutions implemented to create a dynamic, multi-user web application for managing and searching recipes." />
+    <meta name="twitter:image" content="https://jdeebs.dev/assets/images/profilepicture-1.jpg" />
+    <meta name="twitter:site" content="@jdeebsdev" />
+
+    <!-- Title of the webpage -->
+    <title>Recipe App Case Study - Jacob DiBiase</title>
+
+    <!-- Favicon links for various devices and browsers -->
+    <!-- Standard Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicons/favicon.ico" />
+
+    <!-- PNG Favicon sizes -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png" />
+
+    <!-- Apple Touch Icon for iOS devices -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png" />
+
+    <!-- Android Chrome Icons -->
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicons/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/favicons/android-chrome-512x512.png" />
+
+    <!-- Web App Manifest (for Progressive Web Apps) -->
+    <link rel="manifest" href="assets/favicons/site.webmanifest" />
+
+    <!-- Preconnect to Google Fonts to speed up font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Link to main CSS file -->
+    <link rel="stylesheet" href="dist/main.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav aria-label="Main Navigation">
+                <a href="#">
+                    <button class="top" aria-label="Scroll to top button" alt="Up arrow button">
+                        ⬆️
+                    </button>
+                </a>
+
+                <!-- Hamburger menu -->
+                <label for="menu" tabindex="0" aria-label="Open Hamburger Menu">
+                    <img src="assets/icons/hamburger_icon.svg" alt="Hamburger menu icon" width="40" height="40" />
+                </label>
+                <input id="menu" type="checkbox" />
+
+                <!-- Collapsable menu -->
+                <ul>
+                    <li>
+                        <a href="recipe-case-study.html#overview"><span>Overview</span></a>
+                    </li>
+                    <li>
+                        <a href="recipe-case-study.html#approach"><span>Approach</span></a>
+                    </li>
+                    <li>
+                        <a href="recipe-case-study.html#summary"><span>Summary</span></a>
+                    </li>
+                    <li>
+                        <a href="index.html#recipe-app"><span>Back</span></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <img src="assets/images/recipe-app-hero.jpg" alt="Recipe App Interface" class="hero-image">
+        <section class="overview hero-image" id="overview">
+            <div class="container">
+                <h1><span class="dark-background">Case Study:</span><br><span class="dark-background">Recipe
+                        App</span><span>👩‍🍳</span>
+                </h1>
+                <h2><span class="dark-background">Overview</span></h2>
+                <p class="dark-background">
+                    The Recipe App is a full-stack web application that allows users to create, search, and manage recipes. It includes an admin panel for data management and an analytics dashboard for visualizing recipe trends and ingredient usage.
+                </p>
+            </div>
+        </section>
+
+        <section class="challenge">
+            <div class="container">
+                <h3>challenge</h3>
+                <p>
+                    The primary goal was to demonstrate proficiency in Django, Python, and full-stack web development by creating a functional, user-friendly web application. The app was designed to showcase skills in web application development, database management, user authentication, and data visualization.
+                </p>
+            </div>
+        </section>
+
+        <section class="requirements">
+            <h3>requirements</h3>
+            <div class="container">
+                <ul>
+                    <li>Handles user input errors with clear messages.</li>
+                    <li>Uses a local PostgreSQL database (SQLite for development).</li>
+                    <li>Provides a user-friendly interface with clear menus and prompts.</li>
+                    <li>Includes well-documented code, tests, and a `requirements.txt` file.</li>
+                    <li>Includes a README for setup and usage instructions.</li>
+                </ul>
+            </div>
+        </section>        
+
+        <section class="role">
+            <div class="container">
+                <h3>role</h3>
+                <p>Full Stack Developer, with a focus on backend development using Django and Python.</p>
+            </div>
+        </section>
+
+        <section class="project-scale">
+            <div class="container">
+                <h3>project scale</h3>
+                <p>
+                    Covered key milestones including:
+                </p>
+                <ol>
+                    <li>Setting up Django and creating models for recipes and ingredients</li>
+                    <li>Implementing user authentication and admin functionality</li>
+                    <li>Developing search functionality and chart analytics visualization</li>
+                    <li>Deploying the app to Heroku with a PostgreSQL database</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="tools-used">
+            <div class="container">
+                <h3>tools used</h3>
+                <p>
+                    The Recipe App was developed using the following technologies and assets:
+                </p>
+                <div class="tech-icons">
+                    <img src="assets/icons/django.svg" alt="Django logo" />
+                    <img src="assets/icons/sqlite.svg" alt="SQLite logo" />
+                    <img src="assets/icons/postgressql.svg" alt="PostgreSQL logo" />
+                    <img src="assets/icons/heroku.svg" alt="Heroku logo" />
+                    <img src="assets/icons/matplotlib.svg" alt="Matplotlib logo" />
+                    <img src="assets/icons/cloudinary.svg" alt="Cloudinary logo" />
+                </div>
+                <ul>
+                    <li><span>Django:</span> For backend development and web application framework</li>
+                    <li><span>SQLite:</span> For development database management</li>
+                    <li><span>PostgreSQL:</span> For production database management</li>
+                    <li><span>Heroku:</span> For deployment and hosting</li>
+                    <li><span>Matplotlib:</span> Library for data visualization</li>
+                    <li><span>Django Testing Framework:</span> For automated testing and code reliability</li>
+                </ul>
+            </div>
+        </section>
+        <section class="approach" id="approach">
+            <div class="container">
+                <h2>Approach</h2>
+                <p>
+                    I reviewed the exercises in my Python specialization course and integrated the relevant key features step by step.
+                </p>
+
+                <div class="approach-item-container">
+                    <div class="approach-item">
+                        <h3>features</h3>
+                        <ul>
+                            <li><img src="assets/icons/user-authentication.svg" alt="User icon" /><span>User Authentication:</span> Users can log in and log out securely.</li>
+                            <li><img src="assets/icons/recipe-management.svg" alt="Recipe management icon" /><span>Recipe Management:</span> Users can create and browse recipes that include name, description, ingredients, prep time, cook time, difficulty, and pictures.</li>
+                            <li><img src="assets/icons/search-functionality.svg" alt="Search icon" /><span>Search Functionality:</span> Users can search for recipes based on name, ingredients, or difficulty.</li>
+                            <li><img src="assets/icons/recipe-details.svg" alt="Recipe details icon" /><span>Recipe Details:</span> Users can display extended details for selected recipes.</li>
+                            <li><img src="assets/icons/admin-dashboard.svg" alt="Admin dashboard icon" /><span>Admin Dashboard:</span> Admins can manage users and recipes with CRUD capabilities.</li>
+                            <li><img src="assets/icons/analytics-charts.svg" alt="Analytics charts icon" /><span>Analytics Charts:</span> Users can generate charts to visualize data for ingredient frequency, recipe difficulty percentage, and total time per recipe.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3>development process</h3>
+                <div class="approach-item-container">
+                    <div class="approach-item development-process">
+                        <h3>setup</h3>
+                        <p>Set up the Django project, created virtual environments, and installed necessary dependencies. Configured the project structure and initialized the database.</p>
+                    </div>
+                    <div class="approach-item development-process">
+                        <h3>models & database</h3>
+                        <p>Defined Django models for recipes and ingredients, and registered them with the admin panel. Used SQLite for development and PostgreSQL for production.</p>
+                    </div>
+                    <div class="approach-item development-process">
+                        <h3>views & templates</h3>
+                        <p>Developed views and templates to render web pages, handle URL routing, and display recipe information. Created forms for user input and error handling.</p>
+                    </div>
+                    <div class="approach-item development-process">
+                        <h3>user authentication</h3>
+                        <p>Implemented user authentication using Django's built-in auth module. Added login, logout, and view protection features.</p>
+                    </div>
+                    <div class="approach-item development-process">
+                        <h3>search & analytics</h3>
+                        <p>Added search functionality for recipes based on ingredients. Developed an analytics dashboard to visualize recipe trends and ingredient usage.</p>
+                    </div>
+                    <div class="approach-item development-process">
+                        <h3>deployment</h3>
+                        <p>Prepared the app for deployment by configuring settings, updating dependencies, and deploying to Heroku with a PostgreSQL database.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="summary" id="summary">
+            <div class="container">
+                <h2>Summary</h2>
+                <h3>challenges faced</h3>
+                <p>Initially, I deployed with a Postgres setup and used WhiteNoise for static files, but user-uploaded images didn't display correctly. After troubleshooting without success, a fellow student mentioned using a hosting service.</p>
+                    
+                <p>After some research I decided on Cloudinary, which offered a generous free tier, matching the needs of my project. I integrated it with Heroku using environment variables (Figure 1) and the issue was resolved, allowing images to render properly in templates.</p>
+
+                <img src="assets/images/cloudinary_config.png" alt="Code snippet of cloudinary config"
+                    class="challenges-image code-snippet" />
+
+                <p>Figure 1. Cloudinary Configuration in Django Settings.</p>
+
+            <div class="container">
+                <h3>what was learned</h3>
+                <p>Building the Recipe App allowed me to deepen my understanding of Django, Python, and full-stack web development. I gained hands-on experience with database management, user authentication, and data visualization, which prepared me for more complex web development projects in the future.</p>
+
+                <p>Overall, I'm happy with the outcome. This project not only showcased my technical skills but also demonstrated my ability to solve real-world problems through efficient and user-friendly web applications.</p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
