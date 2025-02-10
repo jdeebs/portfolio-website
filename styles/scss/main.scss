@@ -613,9 +613,9 @@ section {
       .experience-position {
         display: flex;
         flex-direction: column;
-        align-items: center;
         max-width: 200px;
         position: relative;
+        padding-left: 40px;
         padding-bottom: var(--spacing-lg);
 
         .experience-title {
