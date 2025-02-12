@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Theme color for browser address bar (for mobile browsers) -->
+    <meta name="theme-color" content="#0B3C5D" />
+
+    <!-- Author -->
+    <meta name="author" content="Jacob DiBiase" />
+
+    <!-- General description -->
+    <meta name="description"
+        content="Jacob DiBiase - Full Stack Developer. Explore my portfolio of innovative projects, technical proficiency, and creative problem-solving." />
+
+    <!-- Robots meta tag to control search engine indexing and following links -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+    <!-- SEO -->
+    <meta name="keywords"
+        content="MovieMax, Angular, TypeScript, Single-Page Application, Case Study, REST API, User Authentication, Jacob DiBiase" />
+    <!-- Canonical URL to avoid duplicate content issues -->
+    <link rel="canonical" href="https://jdeebs.dev/moviemax-case-study.html" />
+
+    <!-- Open Graph meta tags for social sharing (Facebook, LinkedIn, etc.) -->
+    <meta property="og:title" content="MovieMax Angular App Case Study - Jacob DiBiase" />
+    <meta property="og:description"
+        content="Explore the case study of my MovieMax Angular App development project. Learn about the challenges faced, technologies used, and solutions implemented to create a responsive, user-friendly movie exploration app." />
+    <meta name="image" property="og:image" content="https://jdeebs.dev/assets/images/profilepicture-1.jpg" />
+    <meta property="og:url" content="https://jdeebs.dev/moviemax-case-study.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Jacob DiBiase Portfolio" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card meta tags for social sharing (Twitter) -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="MovieMax Angular App Case Study - Jacob DiBiase" />
+    <meta name="twitter:description"
+        content="Explore the case study of my MovieMax Angular App development project. Learn about the challenges faced, technologies used, and solutions implemented to create a responsive, user-friendly movie exploration app." />
+    <meta name="twitter:image" content="https://jdeebs.dev/assets/images/profilepicture-1.jpg" />
+    <meta name="twitter:site" content="@jdeebsdev" />
+
+    <!-- Title of the webpage -->
+    <title>MovieMax Angular App Case Study - Jacob DiBiase</title>
+
+    <!-- Favicon links for various devices and browsers -->
+    <!-- Standard Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicons/favicon.ico" />
+
+    <!-- PNG Favicon sizes -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png" />
+
+    <!-- Apple Touch Icon for iOS devices -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png" />
+
+    <!-- Android Chrome Icons -->
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicons/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/favicons/android-chrome-512x512.png" />
+
+    <!-- Web App Manifest (for Progressive Web Apps) -->
+    <link rel="manifest" href="assets/favicons/site.webmanifest" />
+
+    <!-- Preconnect to Google Fonts to speed up font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Link to main CSS file -->
+    <link rel="stylesheet" href="dist/main.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav aria-label="Main Navigation">
+                <a href="#">
+                    <button class="top" aria-label="Scroll to top button" alt="Up arrow button">
+                        ⬆️
+                    </button>
+                </a>
+
+                <!-- Hamburger menu -->
+                <label for="menu" tabindex="0" aria-label="Open Hamburger Menu">
+                    <img src="assets/icons/hamburger_icon.svg" alt="Hamburger menu icon" width="40" height="40" />
+                </label>
+                <input id="menu" type="checkbox" />
+
+                <!-- Collapsable menu -->
+                <ul>
+                    <li>
+                        <a href="moviemax-case-study.html#overview"><span>Overview</span></a>
+                    </li>
+                    <li>
+                        <a href="moviemax-case-study.html#approach"><span>Approach</span></a>
+                    </li>
+                    <li>
+                        <a href="moviemax-case-study.html#summary"><span>Summary</span></a>
+                    </li>
+                    <li>
+                        <a href="index.html#moviemax-app"><span>Back</span></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <img src="assets/images/moviemax-hero.jpg" alt="MovieMax App Interface" class="hero-image">
+        <section class="overview hero-image" id="overview">
+            <div class="container">
+                <h1><span class="dark-background">Case Study:</span><br><span class="dark-background">MovieMax Angular
+                        App</span><span>🎬</span>
+                </h1>
+                <h2><span class="dark-background">Overview</span></h2>
+                <p class="dark-background">
+                    The MovieMax Angular App is a single-page, responsive web application that allows users to explore
+                    information about movies, directors, and genres. Built using Angular, the app interacts with a
+                    pre-existing REST API and database to provide a seamless user experience. Users can register, log
+                    in, browse movies, and save their favorite movies.
+                </p>
+            </div>
+        </section>
+
+        <section class="challenge">
+            <div class="container">
+                <h3>challenge</h3>
+                <p>
+                    The primary goal was to demonstrate proficiency in Angular by creating a client-side interface based
+                    on a
+                    React app and database I built prior. The challenge involved creating a responsive,
+                    user-friendly application that interacts with a REST API, implements user authentication, and
+                    provides a rich user experience with multiple views.
+                </p>
+                <p>
+                    The project required thorough documentation and the use of Agile project management techniques, such
+                    as user stories and kanban boards, to simulate real-world development practices.
+                </p>
+            </div>
+        </section>
+
+        <section class="requirements">
+            <h3>requirements</h3>
+            <div class="container">
+                <ul>
+                    <li>User authentication and secure login/logout functionality</li>
+                    <li>Movie browsing with detailed information</li>
+                    <li>Dedicated views for directors and genres</li>
+                    <li>Responsive design for seamless cross-device usage</li>
+                    <li>Thorough documentation using Typedoc and JSDoc</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="role">
+            <div class="container">
+                <h3>role</h3>
+                <p>Frontend Developer, with a focus on Angular and TypeScript.</p>
+            </div>
+        </section>
+
+        <section class="project-scale">
+            <div class="container">
+                <h3>project scale</h3>
+                <p>
+                    Covered key milestones including:
+                </p>
+                <ol>
+                    <li>Setting up Angular and creating components</li>
+                    <li>Implementing user authentication and routing</li>
+                    <li>Developing movie browsing and detailed views</li>
+                    <li>Documenting the codebase and deploying to GitHub Pages</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="tools-used">
+            <div class="container">
+                <h3>tools used</h3>
+                <p>
+                    The MovieMax Angular App was developed using the following technologies and assets:
+                </p>
+                <div class="tech-icons">
+                    <img src="assets/icons/trello.svg" alt="Angular logo" />
+                    <img src="assets/icons/angular.svg" alt="Angular logo" />
+                    <img src="assets/icons/typescript.svg" alt="TypeScript logo" />
+                    <img src="assets/icons/angular-material.svg" alt="Angular Material logo" />
+                    <img src="assets/icons/typedoc.svg" alt="Typedoc logo" />
+                </div>
+                <ul>
+                    <li><span>Trello:</span> For Agile project management and task tracking</li>
+                    <li><span>Angular:</span> For building the client-side application</li>
+                    <li><span>TypeScript:</span> For writing scalable and maintainable code</li>
+                    <li><span>Angular Material:</span> For designing a modern, responsive, and consistent user interface
+                    </li>
+                    <li><span>Typedoc:</span> For generating documentation from TypeScript code</li>
+                    <li><span>JSDoc:</span> For adding code comments and creating technical documentation</li>
+                </ul>
+            </div>
+        </section>
+        <section class="approach" id="approach">
+            <div class="container">
+                <h2>Approach</h2>
+                <p>
+                    I set up a kanban board to manage tasks and created a user flow to map out the app's navigation and
+                    functionality. I learned new concepts that were not directly required within the MovieMax project
+                    but were still relevant and beneficial to the development process.
+                </p>
+
+                <div class="approach-item-container">
+                    <div class="approach-item">
+                        <h3>features</h3>
+                        <ul>
+                            <li><img src="assets/icons/user-authentication.svg" alt="User icon" /><span>User
+                                    Authentication:</span> Users can securely register and log in to their accounts.
+                            </li>
+                            <li><img src="assets/icons/scrolling.svg" alt="Scrolling icon" /><span>Movie
+                                    Browsing:</span> Users can view a list of all movies available in the database.</li>
+                            <li><img src="assets/icons/details.svg" alt="Details icon" /><span>Movie
+                                    Details:</span> Users can view detailed information about specific movies, including
+                                cast,
+                                director, genre, and synopsis.</li>
+                            <li><img src="assets/icons/profile.svg" alt="Profile icon" /><span>Profile
+                                    View:</span> Users can view and update account details, or delete their account.
+                            </li>
+                            <li><img src="assets/icons/devices.svg" alt="Responsive devices icon" /><span>Responsive
+                                    Design:</span> The app is fully responsive and works seamlessly across various
+                                devices.</li>
+                        </ul>
+                    </div>
+
+                    <div class="approach-item">
+                        <h3>additional learning</h3>
+                        <ul>
+                            <li>
+                                <img src="assets/icons/project-setup.svg" alt="Project setup icon" />
+                                <span>Project Planning:</span> Reviewed techniques for collaborating with designers, Agile project management practices, and Angular common materials. Created user stories to determine project requirements.
+                            </li>
+                            <li>
+                                <img src="assets/icons/angular-white.svg" alt="Angular icon" />
+                                <span>Angular Intro:</span> Reviewed TypeScript's fit for a scalable project, identified and practiced basic components.
+                            </li>
+                            <li>
+                                <img src="assets/icons/level-up.svg" alt="Advanced Angular icon" />
+                                <span>Advanced Angular (Part 1):</span> Reviewed terminology of components and templates, directives, interpolation, and data binding. Implemented user registration and login forms using Angular Material.
+                            </li>
+                            <li>
+                                <img src="assets/icons/level-up.svg" alt="Advanced Angular icon" />
+                                <span>Advanced Angular (Part 2):</span> Implemented a movie card component to display movie information. Defined routing to enable navigation between different views.
+                            </li>
+                            <li>
+                                <img src="assets/icons/info.svg" alt="Documentation icon" />
+                                <span>Documentation:</span> Reviewed the importance of documentation in development projects. Added comments to the codebase using Typedoc and prepared all necessary technical documentation with JSDoc.
+                            </li>
+                            <li>
+                                <img src="assets/icons/feedback.svg" alt="Feedback icon" />
+                                <span>Providing Constructive Feedback:</span> Learned about best practices for providing feedback. Reviewed a given screen design and provided constructive feedback.
+                            </li>
+                            <li>
+                                <img src="assets/icons/global.svg" alt="Tech community icon" />
+                                <span>Contributing to the Tech Community:</span> Joined online and offline developer communities. Reviewed open source contributing and volunteer opportunities.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3>development process</h3>
+                <div class="approach-item-container">
+                    <div class="approach-item development-process">
+                        <h3>setup</h3>
+                        <p>Set up the Angular project, created components, and configured routing for navigation between
+                            views.</p>
+                    </div>
+                    <div class="approach-item development-process">
+                        <h3>user authentication</h3>
+                        <p>Implemented user registration and login forms using Angular Material and integrated them with
+                            the REST API.</p>
+                    </div>
+                    <div class="approach-item development-process">
+                        <h3>movie browsing</h3>
+                        <p>Developed a movie card component to display movie information and image covers for individual
+                            movies.</p>
+                    </div>
+                    <div class="approach-item development-process">
+                        <h3>views & favorites</h3>
+                        <p>Created dedicated views for directors, genres and synopsis. Added ability for users to
+                            favorite movies linked to their account.</p>
+                    </div>
+                    <div class="approach-item development-process">
+                        <h3>documentation</h3>
+                        <p>Added comments to the codebase using Typedoc and prepared technical documentation with JSDoc.
+                        </p>
+                    </div>
+                    <div class="approach-item development-process">
+                        <h3>deployment</h3>
+                        <p>Built and deployed the app to GitHub Pages using the angular-cli-ghpages package.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="summary" id="summary">
+            <div class="container">
+                <h2>Summary</h2>
+                <h3>challenges faced</h3>
+                <p>Deploying the application to GitHub Pages presented several unexpected challenges. The deployment
+                    process initially failed due to cryptic errors, making it difficult to identify the root cause.
+                    While troubleshooting, I discovered and resolved unrelated issues with the API response format,
+                    which was causing some data to render incorrectly.</p>
+
+                <p>Ultimately, I resolved the deployment errors by downgrading the angular-cli-ghpages dependency
+                    (Figure 1), which
+                    addressed compatibility issues. I learned valuable lessons in debugging and dependency management,
+                    reinforcing the need for careful review of documentation and version compatibility when working with
+                    third-party tools.</p>
+
+                <img src="assets/images/package-json.png" alt="Code snippet of package.json file"
+                    class="challenges-image code-snippet" />
+
+                <p>Figure 1. File Configuration With Downgraded Version</p>
+            </div>
+
+            <div class="container">
+                <h3>what was learned</h3>
+                <p>Building the MovieMax Angular App allowed me to deepen my understanding of Angular and scalable
+                    application development. I gained hands-on experience with Angular Material, routing, and form
+                    handling, while also improving my skills in Agile project management, documentation, and providing
+                    constructive feedback.</p>
+
+                <p>Overall, I'm happy with the outcome. This project reinforced the importance of prioritizing
+                    responsive design and user experience, lessons that will benefit me in future development
+                    initiatives.</p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
