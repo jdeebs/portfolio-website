@@ -942,6 +942,14 @@ section {
   object-fit: cover;
   z-index: -1; // Place image behind text
 }
+.moviemax {
+  @media (max-width: 1600px) {
+    margin-bottom: 100px;
+  }
+  @media (max-width: 450px) {
+    margin-bottom: 300px;
+  }
+}
 .overview {
   position: relative; // Position text over hero hero image
   p {
