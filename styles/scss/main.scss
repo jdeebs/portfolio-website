@@ -419,6 +419,7 @@ section {
         // Project "Built with" tech icons
         .tech-icons {
           display: flex;
+          flex-wrap: wrap;
           justify-content: center;
           padding: var(--spacing-md);
           padding-top: var(--spacing-xs);
