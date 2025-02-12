@@ -1037,6 +1037,13 @@ section {
     list-style-type: none;
     line-height: 1.5;
   }
+  .flowchart {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    height: auto;
+    display: block;
+  }
   .approach-item-container {
     display: flex;
     justify-content: center;
